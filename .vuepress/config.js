@@ -3,14 +3,25 @@ module.exports = {
 	description: 'My Personal Wiki',
 	serviceWorker: true,
 	head: [
-		['link', { rel: 'icon', href: '/hero.png' }],
-		['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    		['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-		['link', { rel: 'apple-touch-icon', href: `/icons/apple-touch-icon-152x152.png` }],
+		['link', {
+			rel: 'icon',
+			href: '/hero.png'
+		}],
+		['meta', {
+			name: 'apple-mobile-web-app-capable',
+			content: 'yes'
+		}],
+		['meta', {
+			name: 'apple-mobile-web-app-status-bar-style',
+			content: 'black'
+		}],
+		['link', {
+			rel: 'apple-touch-icon',
+			href: `/icons/apple-touch-icon-152x152.png`
+		}],
 	],
 	themeConfig: {
-		sidebar: [
-			{
+		sidebar: [{
 				title: 'Geometry',
 				collapsable: true,
 				sidebarDepth: 3,
@@ -21,7 +32,7 @@ module.exports = {
 					'/geometry/differential',
 					'/geometry/git',
 					'/geometry/symplectic',
-					
+
 				]
 			},
 			{
@@ -57,41 +68,57 @@ module.exports = {
 					'/misc/server.md',
 				]
 			},
-				]
-			},
-		
+		]
+	},
+
 
 	plugins: [
 		[
+			'@vuepress/google-analytics',
+			{
+				'ga': '' // UA-00000000-0
+			}
+		],
+
+		[
 			'latex',
-			  {
+			{
 				macros: {
-				  '\\Z': '\\mathbb{Z}',
+					'\\Z': '\\mathbb{Z}',
+					'\\mc': '\\mathcal{#1}',
 				},
-			  },
-		  ],
-		  
-		  [
+			},
+		],
+		[
 			'vuepress-plugin-container',
 			{
-			  type: 'definition',
-			  before: info => `<div class="definition"><p class="title">${info}</p>`,
-			  after: '</div>',
+				type: 'definition',
+				before: info => `<div class="definition"><p class="title">${info}</p>`,
+				after: '</div>',
 			},
-		  ],
+		],
 
-		  [
+		[
 			'vuepress-plugin-container',
 			{
-			  type: 'lemma',
-			  before: info => `<div class="lemma"><p class="title">${info}</p>`,
-			  after: '</div>',
+				type: 'lemma',
+				before: info => `<div class="lemma"><p class="title">${info}</p>`,
+				after: '</div>',
 			},
-		  ],
+		],
 
-		  ['@vuepress/search', {
+		['@vuepress/search', {
 			searchMaxSuggestions: 10
-		  }],
+		}],
 
-		]
-	}
+		[
+			'@vuepress/last-updated',
+		],
+
+		[
+			'@vuepress/plugin-back-to-top',
+			{ },
+		],
+
+	]
+}
