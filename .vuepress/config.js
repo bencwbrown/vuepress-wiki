@@ -43,7 +43,7 @@ module.exports = {
 				children: [
 					'/algebraic-geometry/varieties',
 					'/algebraic-geometry/schemes',
-					'/algebraic-geometry/cohomology',
+					'/algebraic-geometry/sheaves',
 					'/algebraic-geometry/git',
 				]
 			},
