@@ -1,5 +1,13 @@
 # Complex Geometry
 
+## Vector Bundles
+
+## Equivalence of Holomorphic Vector Bundles and Locally Free $\mathcal{O}_{X}$-Modules
+
+::: theorem Proposition
+a
+:::
+
 ## Types and Constructions of Vector Bundles
 
 ### Pullback Bundles
@@ -15,7 +23,7 @@ Let $L \rightarrow X$ be a vector bundle over a topological space $X$, and consi
 :::
 
 ::: tip Example
-Let $\mathcal{O}(1) \rightarrow \mathbb{P}^{n}$ be a line bundle over $n$-dimensional projective space $\mathbb{P}^{n}$, where the homogeneous coordinates $x_{0},\ldots, x_{n}$ give rise to global sections $x_{0},\ldots, x_{n} \in H^{0}(\mathbb{P}^{n}, \mathcal{O}(1))$.
+Let $\mathcal{O}(1) \rightarrow \mathbb{P}^{n}$ be a line bundle over $n$-dimensional projective space $\mathbb{P}^{n}$, where the homogeneous coordinates $x_{0},\ldots, x_{n}$ give rise to global sections $x_{0},\ldots, x_{n} \in H^{0}(\mathbb{P}^{n}, \mathcal{O}(1))$. Now let $X$ be an algebraic variety, and let $\varphi : X \rightarrow \mathbb{P}^{n}$ be a projective embedding. Then $\mathcal{L} = \varphi^{\ast}\mathcal{O}(1)$ is a line bundle on $X$, and the global sections $s_{0},\ldots, s_{n}$, where $s_{i} = \varphi^{\ast}x_{i}$, $s_{i} \in H^{0}(X,\mathcal{L})$, generate the line bundle $\mathcal{L}$.
 :::
 
 ### Direct Sum of Bundles

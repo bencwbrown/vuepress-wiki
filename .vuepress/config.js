@@ -21,6 +21,8 @@ module.exports = {
 		}],
 	],
 	themeConfig: {
+		smoothScroll: true,
+
 		nav: [
 			{ text: 'Home', link: 'https://bencwbrown.co.uk/' },
 			{ text: 'Google', link: 'https://google.com' },
@@ -85,19 +87,11 @@ module.exports = {
 
 	plugins: [
 		[
-			'@vuepress/google-analytics',
-			{
-				'ga': '' // UA-00000000-0
-			}
-		],
-
-		[
 			'latex',
 			{
 				macros: {
 					'\\Z': '\\mathbb{Z}',
 					'\\mc': '\\mathcal{#1}',
-					'\\PP': '\\mathbb{P}',
 				},
 			},
 		],
@@ -105,21 +99,46 @@ module.exports = {
 		[
 			'vuepress-plugin-container',
 			{
-				type: 'lemma',
-				before: info => `<div class="lemma"><p class="title">${info}</p>`,
-				after: '</div>',
+			  type: 'right',
+			  defaultTitle: '',
 			},
-		],
+		  ],
+		  [
+			'vuepress-plugin-container',
+			{
+			  type: 'theorem',
+			  before: info => `<div class="theorem"><p class="title">${info}</p>`,
+			  after: '</div>',
+			},
+		  ],
+	  
+		  // this is how VuePress Default Theme use this plugin
+		  [
+			'vuepress-plugin-container',
+			{
+			  type: 'tip',
+			  defaultTitle: {
+				'/': 'TIP',
+				'/zh/': '提示',
+			  },
+			},
+		  ],
 
 		['@vuepress/search', {
 			searchMaxSuggestions: 10
 		}],
 
-		['@vuepress/last-updated',
-		],
+		['@vuepress/last-updated'],
 
-		['@vuepress/plugin-back-to-top',
-			{ },
+		['vuepress-plugin-smooth-scroll'],
+
+		[
+			'vuepress-plugin-clean-urls',
+			{
+			  normalSuffix: '/',
+			  indexSuffix: '/',
+			  notFoundPath: '/404.html',
+			},
 		],
 
 	]
