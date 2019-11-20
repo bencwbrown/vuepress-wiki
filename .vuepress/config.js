@@ -87,7 +87,8 @@ module.exports = {
 				sidebarDepth: 3,
 				children: [
 					'/misc/translations/translations.md',
-					'/misc/programming/linux.md',				]
+					'/misc/programming/linux.md',
+					'/misc/programming/vuepress.md',				]
 			},
 		]
 	},
@@ -114,24 +115,28 @@ module.exports = {
 		  [
 			'vuepress-plugin-container',
 			{
-			  type: 'theorem',
-			  before: info => `<div class="theorem"><p class="title">${info}</p>`,
+			  type: 'example',
+			  before: info => `<div class="example"><p class="title">${info}</p>`,
+			  after: '</div>',
+			},
+		  ],
+		  [
+			'vuepress-plugin-container',
+			{
+			  type: 'remark',
+			  before: info => `<div class="remark"><p class="title">${info}</p>`,
+			  after: '</div>',
+			},
+		  ],
+		  [
+			'vuepress-plugin-container',
+			{
+			  type: 'caveat',
+			  before: info => `<div class="caveat"><p class="title">${info}</p>`,
 			  after: '</div>',
 			},
 		  ],
 	  
-		  // this is how VuePress Default Theme use this plugin
-		  [
-			'vuepress-plugin-container',
-			{
-			  type: 'tip',
-			  defaultTitle: {
-				'/': 'TIP',
-				'/zh/': '提示',
-			  },
-			},
-		  ],
-
 		['@vuepress/search', {
 			searchMaxSuggestions: 10
 		}],
