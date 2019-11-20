@@ -2,13 +2,13 @@
 
 ## Vector Bundles
 
-## Equivalence of Holomorphic Vector Bundles and Locally Free $\mathcal{O}_{X}$-Modules
+### Properties
 
 ::: theorem Proposition
-a
+Associating to a holomorphic vector bundle its sheaf of sections defines a canonical bijection between the set of holomorphic vector bundles of rank $r$ and the set of locally free $\mathcal{O}_{X}$-modules of rank $r$.
 :::
 
-## Types and Constructions of Vector Bundles
+## Constructions of Vector Bundles
 
 ### Pullback Bundles
 
@@ -19,7 +19,9 @@ $$
 which is equipped with the subspace topology and the projection map $\pi : f^{\ast}\mathcal{L} \rightarrow X$, given by projecting onto the first factor.
 
 ::: tip Example
-Let $L \rightarrow X$ be a vector bundle over a topological space $X$, and consider a point $x \in X$. The inclusion map $i: \{x\} ↪ X$ gives rise to the induced bundle $i^{\ast}L \rightarrow \{x\}$, which is the same as the fibre $L_{x} \cong i^{\ast}L$ over the point $x$.
+Let $L \rightarrow X$ be a vector bundle over a topological space $X$, and consider a point $x \in X$. The inclusion map $i: \{x\} ↪ X$ gives rise to the induced bundle $i^{\ast}L \rightarrow \{x\}$, which is the same as the trivial bundle $\{x\} \times L_{x}$, where $L_{x} \cong i^{\ast}L$ is the fibre over the point $x$.
+
+More generally, if $i: Y \hookrightarrow X$ is the inclusion map of some subspace $Y$ into $X$, then $L|_{Y} := i^{\ast}L$ is the _restriction_ of $L$ from $X$ to $Y$.
 :::
 
 ::: tip Example

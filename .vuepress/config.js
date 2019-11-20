@@ -77,7 +77,6 @@ module.exports = {
 				sidebarDepth: 3,
 				children: [
 					'/misc/linux.md',
-					'/misc/markdown.md',
 					'/misc/server.md',
 				]
 			},
