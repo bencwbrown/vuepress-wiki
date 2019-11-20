@@ -10,6 +10,14 @@ f^{\ast}\mathcal{L} := \{ (x,l) \in (X,\mathcal{L}) : f(x) = p(l) \} \subseteq X
 $$
 which is equipped with the subspace topology and the projection map $\pi : f^{\ast}\mathcal{L} \rightarrow X$, given by projecting onto the first factor.
 
+::: tip Example
+Let $L \rightarrow X$ be a vector bundle over a topological space $X$, and consider a point $x \in X$. The inclusion map $i: \{x\} ↪ X$ gives rise to the induced bundle $i^{\ast}L \rightarrow \{x\}$, which is the same as the fibre $L_{x} \cong i^{\ast}L$ over the point $x$.
+:::
+
+::: tip Example
+Let $\mathcal{O}(1) \rightarrow \mathbb{P}^{n}$ be a line bundle over $n$-dimensional projective space $\mathbb{P}^{n}$, where the homogeneous coordinates $x_{0},\ldots, x_{n}$ give rise to global sections $x_{0},\ldots, x_{n} \in H^{0}(\mathbb{P}^{n}, \mathcal{O}(1))$.
+:::
+
 ### Direct Sum of Bundles
 
 Let $\mathcal{L}$ and $\mathcal{M}$ be two vector bundles over $X$. The _direct sum_ $\mathcal{L} \oplus \mathcal{M}$ is the vector bundle over $X$ whose fibre $(\mathcal{L} \oplus \mathcal{M})_{x}$ for any $x \in X$ is canonically isomorphic to $\mathcal{L}_{x} \oplus \mathcal{M}_{x}$ as vector spaces.

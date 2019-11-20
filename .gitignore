@@ -350,3 +350,5 @@ MigrationBackup/
 
 # Custom contributions
 .vuepress/dist
+/Trash-1000
+

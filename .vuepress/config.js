@@ -21,6 +21,17 @@ module.exports = {
 		}],
 	],
 	themeConfig: {
+		nav: [
+			{ text: 'Home', link: 'https://bencwbrown.co.uk/' },
+			{ text: 'Google', link: 'https://google.com' },
+		  ],
+		
+		// Assumes GitHub. Can also be a full GitLab url.
+		repo: 'bencwbrown/vuepress-wiki',
+    	// Customising the header label
+    	// Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
+		repoLabel: 'GitHub Repository',
+	
 		sidebar: [{
 				title: 'Geometry',
 				collapsable: true,
@@ -86,18 +97,11 @@ module.exports = {
 				macros: {
 					'\\Z': '\\mathbb{Z}',
 					'\\mc': '\\mathcal{#1}',
+					'\\PP': '\\mathbb{P}',
 				},
 			},
 		],
-		[
-			'vuepress-plugin-container',
-			{
-				type: 'definition',
-				before: info => `<div class="definition"><p class="title">${info}</p>`,
-				after: '</div>',
-			},
-		],
-
+		
 		[
 			'vuepress-plugin-container',
 			{
@@ -111,12 +115,10 @@ module.exports = {
 			searchMaxSuggestions: 10
 		}],
 
-		[
-			'@vuepress/last-updated',
+		['@vuepress/last-updated',
 		],
 
-		[
-			'@vuepress/plugin-back-to-top',
+		['@vuepress/plugin-back-to-top',
 			{ },
 		],
 
