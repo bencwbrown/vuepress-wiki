@@ -21,6 +21,8 @@ module.exports = {
 		}],
 	],
 	themeConfig: {
+		
+
 		smoothScroll: true,
 
 		nav: [
@@ -35,17 +37,24 @@ module.exports = {
 		repoLabel: 'GitHub Repository',
 	
 		sidebar: [{
-				title: 'Geometry',
+				title: 'Algebraic Geometry',
 				collapsable: true,
 				sidebarDepth: 3,
 				children: [
-					'/geometry/algebraic',
-					'/geometry/cohomology',
-					'/geometry/complex',
-					'/geometry/differential',
-					'/geometry/git',
-					'/geometry/symplectic',
-
+					'/algebraic-geometry/varieties',
+					'/algebraic-geometry/schemes',
+					'/algebraic-geometry/cohomology',
+					'/algebraic-geometry/git',
+				]
+			},
+			{
+				title: 'Complex, Differential & Symplectic Geometry',
+				collapsable: true,
+				sidebarDepth: 3,
+				children: [
+					'/other-geometry/complex',
+					'/other-geometry/differential',
+					'/other-geometry/symplectic',
 				]
 			},
 			{
@@ -55,6 +64,7 @@ module.exports = {
 				children: [
 					'/algebra/category',
 					'/algebra/commutative',
+					'/algebra/group',
 					'/algebra/lie',
 					'/algebra/noncommutative',
 					'/algebra/representation',
@@ -76,9 +86,8 @@ module.exports = {
 				collapsable: true,
 				sidebarDepth: 3,
 				children: [
-					'/misc/linux.md',
-					'/misc/server.md',
-				]
+					'/misc/translations/translations.md',
+					'/misc/programming/linux.md',				]
 			},
 		]
 	},

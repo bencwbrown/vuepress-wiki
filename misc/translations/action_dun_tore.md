@@ -1,0 +1,1 @@
+# Action d'un tore dans une variété projective
