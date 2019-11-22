@@ -2,9 +2,23 @@
 
 ## Cheatsheets
 
-### Markdown
+### Miscellaneous
 
+#### Local Zotero Website Publishing with Zotsite
 
+```zotsite export -o <BASE_DIR>/zotsite/public -c <BASE_DIR>/zotsite/config```
+
+### Python
+
+#### Virtual Environments for Local Development
+
+The following command will create a new directory within your current directory, which in this example will be named 'virtual':
+
+```python
+python -m venv virtual
+```
+
+The `venv` creates the directory 'virtual' and places the necessary virtual environment files inside of it. In particular within the `virtual/bin` tree will be the `python` and `pip` executables.
 
 ### Git
 
