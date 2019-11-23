@@ -114,6 +114,7 @@ module.exports = {
 				defaultTitle: '',
 			},
 		],
+
 		[
 			'vuepress-plugin-container',
 			{
@@ -123,15 +124,21 @@ module.exports = {
 			},
 		],
 
-		// this is how VuePress Default Theme use this plugin
 		[
 			'vuepress-plugin-container',
 			{
-				type: 'tip',
-				defaultTitle: {
-					'/': 'TIP',
-					'/zh/': '提示',
-				},
+				type: 'remark',
+				before: info => `<div class="remark"><p class="title">${info}</p>`,
+				after: '</div>',
+			},
+		],
+
+		[
+			'vuepress-plugin-container',
+			{
+				type: 'example',
+				before: info => `<div class="example"><p class="title">${info}</p>`,
+				after: '</div>',
 			},
 		],
 
@@ -142,15 +149,6 @@ module.exports = {
 		['@vuepress/last-updated'],
 
 		['vuepress-plugin-smooth-scroll'],
-
-		[
-			'vuepress-plugin-clean-urls',
-			{
-				normalSuffix: '/',
-				indexSuffix: '/',
-				notFoundPath: '/404.html',
-			},
-		],
 
 	]
 }
