@@ -21,21 +21,22 @@ module.exports = {
 		}],
 	],
 	themeConfig: {
-		
-
 		smoothScroll: true,
-
-		nav: [
-			{ text: 'Home', link: 'https://bencwbrown.co.uk/' },
-			{ text: 'Google', link: 'https://google.com' },
-		  ],
-		
+		nav: [{
+				text: 'Home',
+				link: 'https://bencwbrown.co.uk/'
+			},
+			{
+				text: 'Google',
+				link: 'https://google.com'
+			},
+		],
 		// Assumes GitHub. Can also be a full GitLab url.
 		repo: 'bencwbrown/vuepress-wiki',
-    	// Customising the header label
-    	// Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
+		// Customising the header label
+		// Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
 		repoLabel: 'GitHub Repository',
-	
+
 		sidebar: [{
 				title: 'Algebraic Geometry',
 				collapsable: true,
@@ -87,7 +88,8 @@ module.exports = {
 				sidebarDepth: 3,
 				children: [
 					'/misc/translations/translations.md',
-					'/misc/programming/linux.md',				]
+					'/misc/programming/linux.md',
+				]
 			},
 		]
 	},
@@ -103,34 +105,34 @@ module.exports = {
 				},
 			},
 		],
-		
+
 		[
 			'vuepress-plugin-container',
 			{
-			  type: 'right',
-			  defaultTitle: '',
+				type: 'right',
+				defaultTitle: '',
 			},
-		  ],
-		  [
+		],
+		[
 			'vuepress-plugin-container',
 			{
-			  type: 'theorem',
-			  before: info => `<div class="theorem"><p class="title">${info}</p>`,
-			  after: '</div>',
+				type: 'theorem',
+				before: info => `<div class="theorem"><p class="title">${info}</p>`,
+				after: '</div>',
 			},
-		  ],
-	  
-		  // this is how VuePress Default Theme use this plugin
-		  [
+		],
+
+		// this is how VuePress Default Theme use this plugin
+		[
 			'vuepress-plugin-container',
 			{
-			  type: 'tip',
-			  defaultTitle: {
-				'/': 'TIP',
-				'/zh/': '提示',
-			  },
+				type: 'tip',
+				defaultTitle: {
+					'/': 'TIP',
+					'/zh/': '提示',
+				},
 			},
-		  ],
+		],
 
 		['@vuepress/search', {
 			searchMaxSuggestions: 10
@@ -143,9 +145,9 @@ module.exports = {
 		[
 			'vuepress-plugin-clean-urls',
 			{
-			  normalSuffix: '/',
-			  indexSuffix: '/',
-			  notFoundPath: '/404.html',
+				normalSuffix: '/',
+				indexSuffix: '/',
+				notFoundPath: '/404.html',
 			},
 		],
 
