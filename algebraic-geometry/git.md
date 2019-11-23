@@ -25,7 +25,7 @@ $$
   
 ### Picard Groups of Products
 
-Consider two varieties $X, Y$, and their projections $p_{1}: X \times Y \rightarrow X$, $p_{2} : X \times Y \rightarrow Y$. From this we ge a map
+Consider two varieties $X, Y$, and their projections $p_{1}: X \times Y \rightarrow X$, $p_{2} : X \times Y \rightarrow Y$. From this we get a map
 $$
 p_{1}^{\ast} \times p_{2}^{\ast} : Pic(X) \times Pic(Y) ⟶ Pic(X \times Y),\\ 
 (L,M) ⟼ p_{1}^{\ast}(L) \otimes p_{2}^{\ast}(M).
