@@ -30,7 +30,7 @@ Projective morphisms have the property that the preimage of any point is a proje
 
 A morphism $\pi : X \rightarrow V$ of quasi-projective varieties is called a _birational morphism_ if its restriction to some dense open set $U \subset X$ is an isomorphism onto some dense open subset $U^{\prime} \subset V$.
 
-::: tip Example
+::: example Example
 The blow-up of a point in $n$-dimensional affine space $\mathbb{A}^{n}$ is an example of a birational morphism.
 :::
 
