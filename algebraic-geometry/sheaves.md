@@ -1,4 +1,3 @@
 # Sheaves
 
-## Invertible Sheaves
-
+## Invertible Sheaves or Line Bundles
