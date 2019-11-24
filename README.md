@@ -2,7 +2,7 @@
 home: true
 heroText: Wiki
 tagLine: Create and publish fast, feature-rich sites in minutes
-heroImage: /hero.png
+heroImage: /icon.png
 actionText: Enter the wiki! →
 actionLink: /introduction
 ---

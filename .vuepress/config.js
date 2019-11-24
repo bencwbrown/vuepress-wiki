@@ -5,7 +5,7 @@ module.exports = {
 	head: [
 		['link', {
 			rel: 'icon',
-			href: '/hero.png'
+			href: '/icon.png'
 		}],
 		['meta', {
 			name: 'apple-mobile-web-app-capable',
@@ -53,9 +53,9 @@ module.exports = {
 				collapsable: true,
 				sidebarDepth: 3,
 				children: [
-					'/other-geometry/complex',
-					'/other-geometry/differential',
-					'/other-geometry/symplectic',
+					'/geometry/complex',
+					'/geometry/differential',
+					'/geometry/symplectic',
 				]
 			},
 			{
