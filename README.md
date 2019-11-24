@@ -6,7 +6,9 @@ heroImage: /icon.png
 actionText: Enter the wiki! →
 actionLink: /introduction
 ---
+
 ### By Ben Brown
+
 Welcome to my personal wiki! I hope to use to it consolidate the definitions and facts that I probably will use quite often in the research, along with some other more miscellaneous contributions that I find interesting.
 
 Click [here](https://bencwbrown.co.uk) to go back to my home page.

@@ -47,67 +47,8 @@ $$
 $$
 :::
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## References
 
 [1] M. Reid, ‘Graded rings and varieties in weighted projective space’.
 
 [2] N. Proudfoot, ‘Lectures on Toric Varieties’.
-
