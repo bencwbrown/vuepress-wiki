@@ -102,7 +102,6 @@ module.exports = {
 			{
 				macros: {
 					'\\Z': '\\mathbb{Z}',
-					'\\mc': '\\mathcal{#1}',
 				},
 			},
 		],
@@ -151,4 +150,4 @@ module.exports = {
 		['vuepress-plugin-smooth-scroll'],
 
 	]
-}
+};
