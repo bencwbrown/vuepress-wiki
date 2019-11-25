@@ -1,0 +1,45 @@
+{
+  "name": "@bencwbrown/vuepress-wiki",
+  "version": "1.0.0",
+  "description": "Personal wiki based of Vuepress",
+  "main": "index.js",
+  "dependencies": {
+    "vuepress-plugin-clean-urls": "^1.1.0",
+    "vuepress-plugin-container": "^2.1.1",
+    "vuepress-plugin-copyright": "^1.0.2",
+    "vuepress-plugin-dehydrate": "^1.1.0",
+    "vuepress-plugin-git-log": "^1.0.1",
+    "vuepress-plugin-latex": "github:bencwbrown/vuepress-plugin-latex",
+    "vuepress-plugin-medium-zoom": "^1.1.7",
+    "vuepress-plugin-migrate": "^1.0.3",
+    "vuepress-plugin-named-chunks": "^1.0.2",
+    "vuepress-plugin-nprogress": "^1.1.5",
+    "vuepress-plugin-redirect": "^1.2.0",
+    "vuepress-plugin-serve": "^1.1.0",
+    "vuepress-plugin-smooth-scroll": "0.0.8",
+    "vuepress-plugin-table-of-contents": "^1.1.3",
+    "vuepress-plugin-zooming": "^1.1.6"
+  },
+  "devDependencies": {
+    "vuepress": "^1.2.0"
+  },
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bencwbrown/vuepress-wiki.git"
+  },
+  "keywords": [
+    "wiki",
+    "vuepress",
+    "maths"
+  ],
+  "author": "Ben Brown",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bencwbrown/vuepress-wiki/issues"
+  },
+  "homepage": "https://github.com/bencwbrown/vuepress-wiki#readme"
+}

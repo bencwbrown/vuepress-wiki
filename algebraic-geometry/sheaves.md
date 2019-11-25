@@ -1,5 +1,8 @@
 # Sheaves
 
+$\gdef\mc#1{\mathcal{#1}}$
+$\gdef\mf#1{\mathfrak{#1}}$
+
 ## Invertible Sheaves or Line Bundles
 
 ### The Tautological and Hyperplane Bundles

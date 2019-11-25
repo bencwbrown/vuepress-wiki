@@ -1,6 +1,7 @@
 # Schemes
 
-
+$\gdef\mc#1{\mathcal{#1}}$
+$\gdef\mf#1{\mathfrak{#1}}$
 
 ## Projective Schemes
 
