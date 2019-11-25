@@ -1,6 +1,16 @@
-# Linux Computing
+# Linux Programming
 
 ## Cheatsheets
+
+### Linux Shell
+
+#### Directory and File Manipulation
+
+- Search recursively through directories and moves files of a particular format to a new directory:
+    
+```bash
+find /dir/with/pdfs -name "*.pdf" -exec mv {} /new/dir \;
+```
 
 ### Miscellaneous
 

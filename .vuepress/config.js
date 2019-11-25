@@ -87,10 +87,10 @@ module.exports = {
 				collapsable: true,
 				sidebarDepth: 3,
 				children: [
-					'/misc/translations/translations.md',
+					'/misc/manuals.md',
 					'/misc/programming/linux.md',
-					'/misc/programming/vuepress.md',				]
-
+					'/misc/programming/vuepress.md',				
+				]
 			},
 		]
 	},
