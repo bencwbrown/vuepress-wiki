@@ -1,4 +1,5 @@
 module.exports = {
+	lang: 'en-GB',
 	title: 'Personal Wiki',
 	description: 'My Personal Wiki',
 	serviceWorker: true,
