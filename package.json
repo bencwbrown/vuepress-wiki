@@ -1,31 +1,16 @@
 {
-  "name": "@bencwbrown/vuepress-wiki",
-  "version": "1.0.0",
-  "description": "Personal wiki based of Vuepress",
-  "main": "index.js",
-  "dependencies": {
-    "vuepress-plugin-clean-urls": "^1.1.0",
-    "vuepress-plugin-container": "^2.1.1",
-    "vuepress-plugin-copyright": "^1.0.2",
-    "vuepress-plugin-dehydrate": "^1.1.0",
-    "vuepress-plugin-git-log": "^1.0.1",
-    "vuepress-plugin-latex": "github:bencwbrown/vuepress-plugin-latex",
-    "vuepress-plugin-medium-zoom": "^1.1.7",
-    "vuepress-plugin-migrate": "^1.0.3",
-    "vuepress-plugin-named-chunks": "^1.0.2",
-    "vuepress-plugin-nprogress": "^1.1.5",
-    "vuepress-plugin-redirect": "^1.2.0",
-    "vuepress-plugin-serve": "^1.1.0",
-    "vuepress-plugin-smooth-scroll": "0.0.8",
-    "vuepress-plugin-table-of-contents": "^1.1.3",
-    "vuepress-plugin-zooming": "^1.1.6"
-  },
-  "devDependencies": {
-    "vuepress": "^1.2.0"
-  },
+  "name": "vuepress-wiki-branch",
+  "version": "2.0.0",
+  "description": "personal wiki powered by Vuepress",
   "scripts": {
-    "dev": "vuepress dev",
-    "build": "vuepress build"
+    "precommit": "lint-staged",
+    "dev": "vuepress dev docs --temp .temp",
+    "build": "vuepress build docs --temp .temp",
+    "view-info": "vuepress view-info docs --temp .temp",
+    "show-help": "vuepress --help",
+    "lint-md:wording": "textlint ./docs/**/*.md",
+    "lint-md:style": "remark --quiet --frail .",
+    "lint-md": "yarn lint-md:style && yarn lint-md:wording"
   },
   "repository": {
     "type": "git",
@@ -34,12 +19,37 @@
   "keywords": [
     "wiki",
     "vuepress",
-    "maths"
+    "mathematics"
   ],
   "author": "Ben Brown",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/bencwbrown/vuepress-wiki/issues"
   },
-  "homepage": "https://github.com/bencwbrown/vuepress-wiki#readme"
+  "homepage": "https://github.com/bencwbrown/vuepress-wiki#readme",
+  "devDependencies": {
+    "@textlint-rule/textlint-rule-no-unmatched-pair": "^1.0.7",
+    "@vuepress/plugin-back-to-top": "^1.2.0",
+    "@vuepress/plugin-google-analytics": "^1.2.0",
+    "@vuepress/plugin-medium-zoom": "^1.2.0",
+    "@vuepress/plugin-pwa": "^1.2.0",
+    "@vuepress/theme-vue": "^1.2.0",
+    "lint-staged": "^8.1.5",
+    "remark-cli": "^7.0.0",
+    "remark-lint": "^6.0.5",
+    "remark-preset-lint-consistent": "^2.0.3",
+    "remark-preset-lint-recommended": "^3.0.3",
+    "textlint": "^11.3.1",
+    "textlint-filter-rule-comments": "^1.2.2",
+    "textlint-rule-apostrophe": "^1.0.0",
+    "textlint-rule-common-misspellings": "^1.0.1",
+    "textlint-rule-diacritics": "^1.0.0",
+    "textlint-rule-en-capitalization": "^2.0.2",
+    "textlint-rule-stop-words": "^1.0.17",
+    "textlint-rule-terminology": "^1.1.30",
+    "textlint-rule-write-good": "^1.6.2",
+    "vue-toasted": "^1.1.25",
+    "vuepress": "^1.2.0",
+    "vuepress-plugin-flowchart": "^1.4.2"
+  }
 }
