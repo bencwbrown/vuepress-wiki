@@ -1,3 +1,7 @@
+---
+lang: en-GB
+---
+
 # Varieties
 
 ## Quasi-Projective Varieties

@@ -1,3 +1,7 @@
+---
+lang: en-GB
+---
+
 # Vuepress
 
 ## Plugin Dependencies

@@ -1,6 +1,8 @@
-# Commutative Algebra
+---
+lang: en-GB
+---
 
-[[toc]]
+# Commutative Algebra
 
 ## Algebras
 

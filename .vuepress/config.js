@@ -100,9 +100,7 @@ module.exports = {
 		[
 			'latex',
 			{
-				macros: {
-					'\\Z': '\\mathbb{Z}',
-				},
+				macros: { },
 			},
 		],
 

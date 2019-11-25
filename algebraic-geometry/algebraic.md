@@ -1,3 +1,7 @@
+---
+lang: en-GB
+---
+
 # Algebraic Geometry
 
 ## Algebraic Varieties

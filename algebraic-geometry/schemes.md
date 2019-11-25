@@ -1,3 +1,7 @@
+---
+lang: en-GB
+---
+
 # Schemes
 
 $\gdef\mc#1{\mathcal{#1}}$

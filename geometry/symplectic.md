@@ -1,3 +1,7 @@
+---
+lang: en-GB
+---
+
 # Symplectic Geometry
 
 ## Moment Maps

@@ -1,3 +1,7 @@
+---
+lang: en-GB
+---
+
 # Geometric Invariant Theory
 
 - See also [algebraic geometry](./algebraic.md).
