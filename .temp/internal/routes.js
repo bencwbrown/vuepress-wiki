@@ -4,16 +4,16 @@
 
 import { injectComponentOption, ensureAsyncComponentsLoaded } from '@app/util'
 import rootMixins from '@internal/root-mixins'
-import GlobalLayout from "/home/ben/Repositories/vuepress-wiki-branch/node_modules/@vuepress/core/lib/client/components/GlobalLayout.vue"
+import GlobalLayout from "/home/ben/Repositories/vuepress-wiki/node_modules/@vuepress/core/lib/client/components/GlobalLayout.vue"
 
 injectComponentOption(GlobalLayout, 'mixins', rootMixins)
 export const routes = [
   {
-    name: "v-67bd9eb8",
+    name: "v-f236b05e",
     path: "/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-67bd9eb8").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-f236b05e").then(next)
     },
   },
   {
@@ -21,11 +21,11 @@ export const routes = [
     redirect: "/"
   },
   {
-    name: "v-35957706",
+    name: "v-00212e1f",
     path: "/algebra/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-35957706").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-00212e1f").then(next)
     },
   },
   {
@@ -33,59 +33,59 @@ export const routes = [
     redirect: "/algebra/"
   },
   {
-    name: "v-38e50476",
+    name: "v-c308dce8",
     path: "/algebra/category.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-38e50476").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-c308dce8").then(next)
     },
   },
   {
-    name: "v-39371d7a",
+    name: "v-693053ca",
     path: "/algebra/commutative.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-39371d7a").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-693053ca").then(next)
     },
   },
   {
-    name: "v-6e377c63",
+    name: "v-a9d49d2c",
     path: "/algebra/group.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-6e377c63").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-a9d49d2c").then(next)
     },
   },
   {
-    name: "v-19f2d7fa",
+    name: "v-78de648a",
     path: "/algebra/lie.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-19f2d7fa").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-78de648a").then(next)
     },
   },
   {
-    name: "v-6512bae7",
+    name: "v-4c565c2e",
     path: "/algebra/noncommutative.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-6512bae7").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-4c565c2e").then(next)
     },
   },
   {
-    name: "v-7d51f767",
+    name: "v-649598ae",
     path: "/algebra/representation.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-7d51f767").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-649598ae").then(next)
     },
   },
   {
-    name: "v-93f29fb0",
+    name: "v-0c810501",
     path: "/geometry/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-93f29fb0").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-0c810501").then(next)
     },
   },
   {
@@ -93,115 +93,127 @@ export const routes = [
     redirect: "/geometry/"
   },
   {
-    name: "v-e514d642",
+    name: "v-35a683a6",
     path: "/geometry/algebraic/algebraic.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-e514d642").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-35a683a6").then(next)
     },
   },
   {
-    name: "v-ad713182",
+    name: "v-dee9eef4",
     path: "/geometry/algebraic/git.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-ad713182").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-dee9eef4").then(next)
     },
   },
   {
-    name: "v-5c45b9f2",
+    name: "v-222ae564",
     path: "/geometry/algebraic/schemes.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-5c45b9f2").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-222ae564").then(next)
     },
   },
   {
-    name: "v-34fbce3d",
+    name: "v-52093884",
     path: "/geometry/algebraic/sheaves.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-34fbce3d").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-52093884").then(next)
     },
   },
   {
-    name: "v-69f7e097",
+    name: "v-1228cf5e",
     path: "/geometry/algebraic/varieties.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-69f7e097").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-1228cf5e").then(next)
     },
   },
   {
-    name: "v-7a9346a7",
-    path: "/geometry/complex/complex.html",
+    name: "v-71ced54a",
+    path: "/geometry/complex/vector-bundles.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-7a9346a7").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-71ced54a").then(next)
     },
   },
   {
-    name: "v-365cddaa",
-    path: "/geometry/differential/differential.html",
+    name: "v-a7f50cac",
+    path: "/geometry/differential/connections.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-365cddaa").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-a7f50cac").then(next)
     },
   },
   {
-    name: "v-0e3f54ab",
-    path: "/geometry/symplectic/symplectic.html",
+    name: "v-0221ba6c",
+    path: "/geometry/symplectic/moment-maps.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-0e3f54ab").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-0221ba6c").then(next)
     },
   },
   {
-    name: "v-0bd0e011",
+    name: "v-1b49ce50",
     path: "/home.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-0bd0e011").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-1b49ce50").then(next)
     },
   },
   {
-    name: "v-239fffe3",
+    name: "v-c766915a",
+    path: "/miscellaneous/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-c766915a").then(next)
+    },
+  },
+  {
+    path: "/miscellaneous/index.html",
+    redirect: "/miscellaneous/"
+  },
+  {
+    name: "v-1e91586c",
+    path: "/miscellaneous/linux.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-1e91586c").then(next)
+    },
+  },
+  {
+    name: "v-441946ea",
     path: "/miscellaneous/manuals.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-239fffe3").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-441946ea").then(next)
     },
   },
   {
-    name: "v-5119d75f",
+    name: "v-f3cfeab4",
     path: "/miscellaneous/manuals/pypdfocr.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-5119d75f").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-f3cfeab4").then(next)
     },
   },
   {
-    name: "v-cc9d6bfa",
-    path: "/miscellaneous/programming/linux.html",
+    name: "v-a9b8d84c",
+    path: "/miscellaneous/vuepress.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-cc9d6bfa").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-a9b8d84c").then(next)
     },
   },
   {
-    name: "v-8cbe56b2",
-    path: "/miscellaneous/programming/vuepress.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-8cbe56b2").then(next)
-    },
-  },
-  {
-    name: "v-b8e4eb70",
+    name: "v-6e194161",
     path: "/physics/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-b8e4eb70").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-6e194161").then(next)
     },
   },
   {
@@ -209,35 +221,35 @@ export const routes = [
     redirect: "/physics/"
   },
   {
-    name: "v-ba0c597a",
+    name: "v-404fef6c",
     path: "/physics/gauge.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-ba0c597a").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-404fef6c").then(next)
     },
   },
   {
-    name: "v-9f5d68a2",
+    name: "v-1aa2af14",
     path: "/physics/quantisation.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-9f5d68a2").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-1aa2af14").then(next)
     },
   },
   {
-    name: "v-6bb9ea5d",
+    name: "v-2c420cb8",
     path: "/physics/string.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-6bb9ea5d").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-2c420cb8").then(next)
     },
   },
   {
-    name: "v-1e8142fa",
+    name: "v-1138a58a",
     path: "/physics/supersymmetry.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-1e8142fa").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-1138a58a").then(next)
     },
   },
   {

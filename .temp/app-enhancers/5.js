@@ -1,1 +1,1 @@
-export { default } from "/home/ben/Repositories/vuepress-wiki-branch/node_modules/@vuepress/plugin-google-analytics/enhanceAppFile.js"
+export { default } from "/home/ben/Repositories/vuepress-wiki/node_modules/@vuepress/plugin-google-analytics/enhanceAppFile.js"

@@ -1,7 +1,3 @@
----
-lang: en-GB
----
-
 # Group Theory
 
 ## Actions

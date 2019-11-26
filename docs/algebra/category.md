@@ -1,7 +1,3 @@
----
-lang: en-GB
----
-
 # Category Theory
 
 ## Constructions

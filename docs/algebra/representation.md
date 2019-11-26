@@ -1,7 +1,3 @@
----
-lang: en-GB
----
-
 # Representation Theory
 
 ## Constructions

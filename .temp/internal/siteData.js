@@ -18,7 +18,7 @@ export const siteData = {
       },
       "regularPath": "/",
       "relativePath": "README.md",
-      "key": "v-67bd9eb8",
+      "key": "v-f236b05e",
       "path": "/",
       "headers": [
         {
@@ -26,234 +26,23 @@ export const siteData = {
           "title": "By Ben Brown",
           "slug": "by-ben-brown"
         }
-      ]
+      ],
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
-      "title": "Config Reference",
-      "frontmatter": {
-        "sidebarDepth": 3,
-        "sidebar": "auto"
-      },
+      "frontmatter": {},
       "regularPath": "/algebra/",
       "relativePath": "algebra/README.md",
-      "key": "v-35957706",
+      "key": "v-00212e1f",
       "path": "/algebra/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Basic Config",
-          "slug": "basic-config"
-        },
-        {
-          "level": 3,
-          "title": "base",
-          "slug": "base"
-        },
-        {
-          "level": 3,
-          "title": "title",
-          "slug": "title"
-        },
-        {
-          "level": 3,
-          "title": "description",
-          "slug": "description"
-        },
-        {
-          "level": 3,
-          "title": "head",
-          "slug": "head"
-        },
-        {
-          "level": 3,
-          "title": "host",
-          "slug": "host"
-        },
-        {
-          "level": 3,
-          "title": "port",
-          "slug": "port"
-        },
-        {
-          "level": 3,
-          "title": "temp",
-          "slug": "temp"
-        },
-        {
-          "level": 3,
-          "title": "dest",
-          "slug": "dest"
-        },
-        {
-          "level": 3,
-          "title": "locales",
-          "slug": "locales"
-        },
-        {
-          "level": 3,
-          "title": "shouldPrefetch",
-          "slug": "shouldprefetch"
-        },
-        {
-          "level": 3,
-          "title": "cache",
-          "slug": "cache"
-        },
-        {
-          "level": 3,
-          "title": "extraWatchFiles",
-          "slug": "extrawatchfiles"
-        },
-        {
-          "level": 3,
-          "title": "patterns",
-          "slug": "patterns"
-        },
-        {
-          "level": 2,
-          "title": "Styling",
-          "slug": "styling"
-        },
-        {
-          "level": 3,
-          "title": "palette.styl",
-          "slug": "palette-styl"
-        },
-        {
-          "level": 3,
-          "title": "index.styl",
-          "slug": "index-styl"
-        },
-        {
-          "level": 2,
-          "title": "Theming",
-          "slug": "theming"
-        },
-        {
-          "level": 3,
-          "title": "theme",
-          "slug": "theme"
-        },
-        {
-          "level": 3,
-          "title": "themeConfig",
-          "slug": "themeconfig"
-        },
-        {
-          "level": 2,
-          "title": "Pluggable",
-          "slug": "pluggable"
-        },
-        {
-          "level": 3,
-          "title": "plugins",
-          "slug": "plugins"
-        },
-        {
-          "level": 2,
-          "title": "Markdown",
-          "slug": "markdown"
-        },
-        {
-          "level": 3,
-          "title": "markdown.lineNumbers",
-          "slug": "markdown-linenumbers"
-        },
-        {
-          "level": 3,
-          "title": "markdown.slugify",
-          "slug": "markdown-slugify"
-        },
-        {
-          "level": 3,
-          "title": "markdown.anchor",
-          "slug": "markdown-anchor"
-        },
-        {
-          "level": 3,
-          "title": "markdown.externalLinks",
-          "slug": "markdown-externallinks"
-        },
-        {
-          "level": 3,
-          "title": "markdown.toc",
-          "slug": "markdown-toc"
-        },
-        {
-          "level": 3,
-          "title": "markdown.plugins",
-          "slug": "markdown-plugins"
-        },
-        {
-          "level": 3,
-          "title": "markdown.extendMarkdown",
-          "slug": "markdown-extendmarkdown"
-        },
-        {
-          "level": 3,
-          "title": "markdown.extractHeaders",
-          "slug": "markdown-extractheaders"
-        },
-        {
-          "level": 2,
-          "title": "Build Pipeline",
-          "slug": "build-pipeline"
-        },
-        {
-          "level": 3,
-          "title": "postcss",
-          "slug": "postcss"
-        },
-        {
-          "level": 3,
-          "title": "Stylus",
-          "slug": "stylus"
-        },
-        {
-          "level": 3,
-          "title": "scss",
-          "slug": "scss"
-        },
-        {
-          "level": 3,
-          "title": "Sass",
-          "slug": "sass"
-        },
-        {
-          "level": 3,
-          "title": "less",
-          "slug": "less"
-        },
-        {
-          "level": 3,
-          "title": "configureWebpack",
-          "slug": "configurewebpack"
-        },
-        {
-          "level": 3,
-          "title": "chainWebpack",
-          "slug": "chainwebpack"
-        },
-        {
-          "level": 2,
-          "title": "Browser Compatibility",
-          "slug": "browser-compatibility"
-        },
-        {
-          "level": 3,
-          "title": "evergreen",
-          "slug": "evergreen"
-        }
-      ]
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
       "title": "Category Theory",
-      "frontmatter": {
-        "lang": "en-GB"
-      },
+      "frontmatter": {},
       "regularPath": "/algebra/category.html",
       "relativePath": "algebra/category.md",
-      "key": "v-38e50476",
+      "key": "v-c308dce8",
       "path": "/algebra/category.html",
       "headers": [
         {
@@ -266,16 +55,15 @@ export const siteData = {
           "title": "Coproduct",
           "slug": "coproduct"
         }
-      ]
+      ],
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
       "title": "Commutative Algebra",
-      "frontmatter": {
-        "lang": "en-GB"
-      },
+      "frontmatter": {},
       "regularPath": "/algebra/commutative.html",
       "relativePath": "algebra/commutative.md",
-      "key": "v-39371d7a",
+      "key": "v-693053ca",
       "path": "/algebra/commutative.html",
       "headers": [
         {
@@ -283,16 +71,15 @@ export const siteData = {
           "title": "Algebras",
           "slug": "algebras"
         }
-      ]
+      ],
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
       "title": "Group Theory",
-      "frontmatter": {
-        "lang": "en-GB"
-      },
+      "frontmatter": {},
       "regularPath": "/algebra/group.html",
       "relativePath": "algebra/group.md",
-      "key": "v-6e377c63",
+      "key": "v-a9d49d2c",
       "path": "/algebra/group.html",
       "headers": [
         {
@@ -330,36 +117,33 @@ export const siteData = {
           "title": "Borel Subgroup",
           "slug": "borel-subgroup"
         }
-      ]
+      ],
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
       "title": "Lie Theory",
-      "frontmatter": {
-        "lang": "en-GB"
-      },
+      "frontmatter": {},
       "regularPath": "/algebra/lie.html",
       "relativePath": "algebra/lie.md",
-      "key": "v-19f2d7fa",
-      "path": "/algebra/lie.html"
+      "key": "v-78de648a",
+      "path": "/algebra/lie.html",
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
       "title": "Non-Commutative Algebra",
-      "frontmatter": {
-        "lang": "en-GB"
-      },
+      "frontmatter": {},
       "regularPath": "/algebra/noncommutative.html",
       "relativePath": "algebra/noncommutative.md",
-      "key": "v-6512bae7",
-      "path": "/algebra/noncommutative.html"
+      "key": "v-4c565c2e",
+      "path": "/algebra/noncommutative.html",
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
       "title": "Representation Theory",
-      "frontmatter": {
-        "lang": "en-GB"
-      },
+      "frontmatter": {},
       "regularPath": "/algebra/representation.html",
       "relativePath": "algebra/representation.md",
-      "key": "v-7d51f767",
+      "key": "v-649598ae",
       "path": "/algebra/representation.html",
       "headers": [
         {
@@ -372,61 +156,24 @@ export const siteData = {
           "title": "Tensor Product",
           "slug": "tensor-product"
         }
-      ]
+      ],
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
-      "title": "Introduction",
+      "title": "Geometry",
       "frontmatter": {},
       "regularPath": "/geometry/",
       "relativePath": "geometry/README.md",
-      "key": "v-93f29fb0",
+      "key": "v-0c810501",
       "path": "/geometry/",
-      "headers": [
-        {
-          "level": 2,
-          "title": "How It Works",
-          "slug": "how-it-works"
-        },
-        {
-          "level": 2,
-          "title": "Features",
-          "slug": "features"
-        },
-        {
-          "level": 2,
-          "title": "Why Not ...?",
-          "slug": "why-not"
-        },
-        {
-          "level": 3,
-          "title": "Nuxt",
-          "slug": "nuxt"
-        },
-        {
-          "level": 3,
-          "title": "Docsify / Docute",
-          "slug": "docsify-docute"
-        },
-        {
-          "level": 3,
-          "title": "Hexo",
-          "slug": "hexo"
-        },
-        {
-          "level": 3,
-          "title": "GitBook",
-          "slug": "gitbook"
-        }
-      ]
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
       "title": "Algebraic Geometry",
-      "frontmatter": {
-        "lang": "en-GB"
-      },
+      "frontmatter": {},
       "regularPath": "/geometry/algebraic/algebraic.html",
       "relativePath": "geometry/algebraic/algebraic.md",
-      "key": "v-e514d642",
+      "key": "v-35a683a6",
       "path": "/geometry/algebraic/algebraic.html",
       "headers": [
         {
@@ -479,16 +226,15 @@ export const siteData = {
           "title": "Closed Embeddings",
           "slug": "closed-embeddings"
         }
-      ]
+      ],
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
       "title": "Geometric Invariant Theory",
-      "frontmatter": {
-        "lang": "en-GB"
-      },
+      "frontmatter": {},
       "regularPath": "/geometry/algebraic/git.html",
       "relativePath": "geometry/algebraic/git.md",
-      "key": "v-ad713182",
+      "key": "v-dee9eef4",
       "path": "/geometry/algebraic/git.html",
       "headers": [
         {
@@ -499,7 +245,7 @@ export const siteData = {
         {
           "level": 3,
           "title": "$G$-linearisation",
-          "slug": "g-linearisation"
+          "slug": "linearisation"
         },
         {
           "level": 3,
@@ -516,7 +262,8 @@ export const siteData = {
           "title": "Algebraic Symplectic Reduction",
           "slug": "algebraic-symplectic-reduction-2"
         }
-      ]
+      ],
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
       "title": "Schemes",
@@ -525,7 +272,7 @@ export const siteData = {
       },
       "regularPath": "/geometry/algebraic/schemes.html",
       "relativePath": "geometry/algebraic/schemes.md",
-      "key": "v-5c45b9f2",
+      "key": "v-222ae564",
       "path": "/geometry/algebraic/schemes.html",
       "headers": [
         {
@@ -553,7 +300,8 @@ export const siteData = {
           "title": "References",
           "slug": "references"
         }
-      ]
+      ],
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
       "title": "Sheaves",
@@ -562,7 +310,7 @@ export const siteData = {
       },
       "regularPath": "/geometry/algebraic/sheaves.html",
       "relativePath": "geometry/algebraic/sheaves.md",
-      "key": "v-34fbce3d",
+      "key": "v-52093884",
       "path": "/geometry/algebraic/sheaves.html",
       "headers": [
         {
@@ -575,16 +323,15 @@ export const siteData = {
           "title": "The Tautological and Hyperplane Bundles",
           "slug": "the-tautological-and-hyperplane-bundles"
         }
-      ]
+      ],
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
       "title": "Varieties",
-      "frontmatter": {
-        "lang": "en-GB"
-      },
+      "frontmatter": {},
       "regularPath": "/geometry/algebraic/varieties.html",
       "relativePath": "geometry/algebraic/varieties.md",
-      "key": "v-69f7e097",
+      "key": "v-1228cf5e",
       "path": "/geometry/algebraic/varieties.html",
       "headers": [
         {
@@ -627,70 +374,59 @@ export const siteData = {
           "title": "Birational Equivalence",
           "slug": "birational-equivalence"
         }
-      ]
+      ],
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
-      "title": "Complex Geometry",
-      "frontmatter": {
-        "lang": "en-GB"
-      },
-      "regularPath": "/geometry/complex/complex.html",
-      "relativePath": "geometry/complex/complex.md",
-      "key": "v-7a9346a7",
-      "path": "/geometry/complex/complex.html",
+      "title": "Vector Bundles",
+      "frontmatter": {},
+      "regularPath": "/geometry/complex/vector-bundles.html",
+      "relativePath": "geometry/complex/vector-bundles.md",
+      "key": "v-71ced54a",
+      "path": "/geometry/complex/vector-bundles.html",
       "headers": [
         {
           "level": 2,
-          "title": "Vector Bundles",
-          "slug": "vector-bundles"
-        },
-        {
-          "level": 3,
           "title": "Properties",
           "slug": "properties"
         },
         {
           "level": 2,
-          "title": "Constructions of Vector Bundles",
-          "slug": "constructions-of-vector-bundles"
-        },
-        {
-          "level": 3,
           "title": "Pullback Bundles",
           "slug": "pullback-bundles"
         },
         {
-          "level": 3,
+          "level": 2,
           "title": "Direct Sum of Bundles",
           "slug": "direct-sum-of-bundles"
         },
         {
-          "level": 3,
+          "level": 2,
           "title": "Tensor Product of Bundles",
           "slug": "tensor-product-of-bundles"
         },
         {
-          "level": 3,
+          "level": 2,
           "title": "Exterior and Symmetric Powers of Bundles",
           "slug": "exterior-and-symmetric-powers-of-bundles"
         },
         {
-          "level": 3,
+          "level": 2,
           "title": "External Tensor Products of Bundles",
           "slug": "external-tensor-products-of-bundles"
         },
         {
-          "level": 3,
+          "level": 2,
           "title": "Dual Bundles",
           "slug": "dual-bundles"
         },
         {
-          "level": 3,
+          "level": 2,
           "title": "Determinant Bundles",
           "slug": "determinant-bundles"
         },
         {
-          "level": 3,
+          "level": 2,
           "title": "Projective Bundles",
           "slug": "projective-bundles"
         }
@@ -698,104 +434,135 @@ export const siteData = {
     },
     {
       "title": "Differential Geometry",
-      "frontmatter": {
-        "lang": "en-GB"
-      },
-      "regularPath": "/geometry/differential/differential.html",
-      "relativePath": "geometry/differential/differential.md",
-      "key": "v-365cddaa",
-      "path": "/geometry/differential/differential.html"
+      "frontmatter": {},
+      "regularPath": "/geometry/differential/connections.html",
+      "relativePath": "geometry/differential/connections.md",
+      "key": "v-a7f50cac",
+      "path": "/geometry/differential/connections.html"
     },
     {
-      "title": "Symplectic Geometry",
-      "frontmatter": {
-        "lang": "en-GB"
-      },
-      "regularPath": "/geometry/symplectic/symplectic.html",
-      "relativePath": "geometry/symplectic/symplectic.md",
-      "key": "v-0e3f54ab",
-      "path": "/geometry/symplectic/symplectic.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Moment Maps",
-          "slug": "moment-maps"
-        },
-        {
-          "level": 2,
-          "title": "Symplectic Cutting",
-          "slug": "symplectic-cutting"
-        }
-      ]
+      "title": "Moment Maps",
+      "frontmatter": {},
+      "regularPath": "/geometry/symplectic/moment-maps.html",
+      "relativePath": "geometry/symplectic/moment-maps.md",
+      "key": "v-0221ba6c",
+      "path": "/geometry/symplectic/moment-maps.html"
     },
     {
+      "title": "TODO:",
       "frontmatter": {},
       "regularPath": "/home.html",
       "relativePath": "home.md",
-      "key": "v-0bd0e011",
-      "path": "/home.html"
+      "key": "v-1b49ce50",
+      "path": "/home.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Topics",
+          "slug": "topics"
+        },
+        {
+          "level": 2,
+          "title": "Configuration",
+          "slug": "configuration"
+        }
+      ],
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
+    },
+    {
+      "title": "Miscellaneous",
+      "frontmatter": {},
+      "regularPath": "/miscellaneous/",
+      "relativePath": "miscellaneous/README.md",
+      "key": "v-c766915a",
+      "path": "/miscellaneous/"
+    },
+    {
+      "title": "Cheatsheets",
+      "frontmatter": {},
+      "regularPath": "/miscellaneous/linux.html",
+      "relativePath": "miscellaneous/linux.md",
+      "key": "v-1e91586c",
+      "path": "/miscellaneous/linux.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Linux Shell",
+          "slug": "linux-shell"
+        },
+        {
+          "level": 3,
+          "title": "Directory and File Manipulation",
+          "slug": "directory-and-file-manipulation"
+        },
+        {
+          "level": 2,
+          "title": "Miscellaneous",
+          "slug": "miscellaneous"
+        },
+        {
+          "level": 3,
+          "title": "Local Zotero Website Publishing with Zotsite",
+          "slug": "local-zotero-website-publishing-with-zotsite"
+        },
+        {
+          "level": 2,
+          "title": "Python",
+          "slug": "python"
+        },
+        {
+          "level": 3,
+          "title": "Virtual Environments for Local Development",
+          "slug": "virtual-environments-for-local-development"
+        },
+        {
+          "level": 2,
+          "title": "Git",
+          "slug": "git"
+        },
+        {
+          "level": 3,
+          "title": "Setup",
+          "slug": "setup"
+        },
+        {
+          "level": 3,
+          "title": "Setup & Initialisation",
+          "slug": "setup-initialisation"
+        },
+        {
+          "level": 3,
+          "title": "Stage & Snapshot",
+          "slug": "stage-snapshot"
+        }
+      ]
     },
     {
       "title": "Manuals and READMEs",
       "frontmatter": {},
       "regularPath": "/miscellaneous/manuals.html",
       "relativePath": "miscellaneous/manuals.md",
-      "key": "v-239fffe3",
-      "path": "/miscellaneous/manuals.html"
+      "key": "v-441946ea",
+      "path": "/miscellaneous/manuals.html",
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
       "frontmatter": {},
       "regularPath": "/miscellaneous/manuals/pypdfocr.html",
       "relativePath": "miscellaneous/manuals/pypdfocr.md",
-      "key": "v-5119d75f",
-      "path": "/miscellaneous/manuals/pypdfocr.html"
-    },
-    {
-      "title": "Linux Programming",
-      "frontmatter": {
-        "lang": "en-GB"
-      },
-      "regularPath": "/miscellaneous/programming/linux.html",
-      "relativePath": "miscellaneous/programming/linux.md",
-      "key": "v-cc9d6bfa",
-      "path": "/miscellaneous/programming/linux.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Cheatsheets",
-          "slug": "cheatsheets"
-        },
-        {
-          "level": 3,
-          "title": "Linux Shell",
-          "slug": "linux-shell"
-        },
-        {
-          "level": 3,
-          "title": "Miscellaneous",
-          "slug": "miscellaneous"
-        },
-        {
-          "level": 3,
-          "title": "Python",
-          "slug": "python"
-        },
-        {
-          "level": 3,
-          "title": "Git",
-          "slug": "git"
-        }
-      ]
+      "key": "v-f3cfeab4",
+      "path": "/miscellaneous/manuals/pypdfocr.html",
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
       "title": "Vuepress",
       "frontmatter": {
         "lang": "en-GB"
       },
-      "regularPath": "/miscellaneous/programming/vuepress.html",
-      "relativePath": "miscellaneous/programming/vuepress.md",
-      "key": "v-8cbe56b2",
-      "path": "/miscellaneous/programming/vuepress.html",
+      "regularPath": "/miscellaneous/vuepress.html",
+      "relativePath": "miscellaneous/vuepress.md",
+      "key": "v-a9b8d84c",
+      "path": "/miscellaneous/vuepress.html",
       "headers": [
         {
           "level": 2,
@@ -815,51 +582,55 @@ export const siteData = {
       ]
     },
     {
-      "title": "Plugin",
       "frontmatter": {},
       "regularPath": "/physics/",
       "relativePath": "physics/README.md",
-      "key": "v-b8e4eb70",
-      "path": "/physics/"
+      "key": "v-6e194161",
+      "path": "/physics/",
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
       "title": "Gauge Theory",
       "frontmatter": {},
       "regularPath": "/physics/gauge.html",
       "relativePath": "physics/gauge.md",
-      "key": "v-ba0c597a",
-      "path": "/physics/gauge.html"
+      "key": "v-404fef6c",
+      "path": "/physics/gauge.html",
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
-      "title": "Quantisation",
+      "title": "Geometric Quantisation",
       "frontmatter": {},
       "regularPath": "/physics/quantisation.html",
       "relativePath": "physics/quantisation.md",
-      "key": "v-9f5d68a2",
+      "key": "v-1aa2af14",
       "path": "/physics/quantisation.html",
       "headers": [
         {
           "level": 2,
-          "title": "Geometric Quantisation",
-          "slug": "geometric-quantisation"
+          "title": "Prequantisation",
+          "slug": "prequantisation"
         }
-      ]
+      ],
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
       "title": "String Theory",
       "frontmatter": {},
       "regularPath": "/physics/string.html",
       "relativePath": "physics/string.md",
-      "key": "v-6bb9ea5d",
-      "path": "/physics/string.html"
+      "key": "v-2c420cb8",
+      "path": "/physics/string.html",
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
       "title": "Supersymmetry",
       "frontmatter": {},
       "regularPath": "/physics/supersymmetry.html",
       "relativePath": "physics/supersymmetry.md",
-      "key": "v-1e8142fa",
-      "path": "/physics/supersymmetry.html"
+      "key": "v-1138a58a",
+      "path": "/physics/supersymmetry.html",
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     }
   ],
   "themeConfig": {
@@ -880,6 +651,10 @@ export const siteData = {
             "ariaLabel": "Geometry",
             "items": [
               {
+                "text": "Geometry",
+                "link": "/geometry/"
+              },
+              {
                 "text": "Algebraic",
                 "items": [
                   {
@@ -889,6 +664,10 @@ export const siteData = {
                   {
                     "text": "Schemes",
                     "link": "/geometry/algebraic/schemes.html"
+                  },
+                  {
+                    "text": "Sheaves",
+                    "link": "/geometry/algebraic/sheaves.html"
                   },
                   {
                     "text": "Geometric Invariant Theory",
@@ -941,79 +720,109 @@ export const siteData = {
         "sidebar": {
           "/geometry/": [
             {
-              "title": "Algebraic",
+              "title": "Algebraic Geometry",
               "collapsable": false,
-              "sidebarDepth": 2,
+              "sidebarDepth": 1,
               "children": [
-                "varieties",
-                "schemes",
-                "sheaves",
-                "git"
+                "./algebraic/varieties",
+                "./algebraic/schemes",
+                "./algebraic/sheaves",
+                "./algebraic/git"
               ]
             },
             {
-              "title": "Complex",
+              "title": "Complex Geometry",
               "collapsable": false,
               "sidebarDepth": 2,
               "children": [
-                "vector-bundles"
+                "./complex/vector-bundles"
               ]
             },
             {
-              "title": "Symplectic",
+              "title": "Symplectic Geometry",
               "collapsable": false,
               "sidebarDepth": 2,
               "children": [
-                "moment-maps"
+                "./symplectic/moment-maps"
               ]
             },
             {
-              "title": "Differential",
+              "title": "Differential Geometry",
               "collapsable": false,
               "sidebarDepth": 2,
               "children": [
-                "connections"
+                "./differential/connections"
               ]
             }
           ],
           "/algebra/": [
             {
-              "title": "Commutative",
+              "title": "Category Theory",
               "collapsable": false,
               "sidebarDepth": 2,
-              "children": []
+              "children": [
+                "category"
+              ]
             },
             {
-              "title": "Non-Commutative",
+              "title": "Commutative Algebra",
               "collapsable": false,
               "sidebarDepth": 2,
-              "children": []
+              "children": [
+                "commutative"
+              ]
+            },
+            {
+              "title": "Group Theory",
+              "collapsable": false,
+              "sidebarDepth": 2,
+              "children": [
+                "group"
+              ]
+            },
+            {
+              "title": "Non-Commutative Algebra",
+              "collapsable": false,
+              "sidebarDepth": 2,
+              "children": [
+                "noncommutative"
+              ]
             },
             {
               "title": "Representation Theory",
               "collapsable": false,
               "sidebarDepth": 2,
               "children": [
-                "algebras"
+                "representation"
               ]
-            },
-            {
-              "collapsable": false,
-              "sidebarDepth": 2,
-              "children": []
-            },
-            {
-              "collapsable": false,
-              "sidebarDepth": 2,
-              "children": []
             }
           ],
           "/physics/": [
             {
-              "title": "Theme",
+              "title": "Quantisation",
               "collapsable": false,
               "sidebarDepth": 2,
-              "children": []
+              "children": [
+                "./quantisation"
+              ]
+            },
+            {
+              "title": "String Theory",
+              "collapsable": false,
+              "sidebarDepth": 2,
+              "children": [
+                "./string"
+              ]
+            }
+          ],
+          "/miscellaneous/": [
+            {
+              "title": "Linux",
+              "collapsable": false,
+              "sidebarDepth": 1,
+              "children": [
+                "./linux"
+              ]
             }
           ]
         }

@@ -1,7 +1,3 @@
----
-lang: en-GB
----
-
 # Geometric Invariant Theory
 
 - See also [algebraic geometry](./algebraic.md).
@@ -12,9 +8,7 @@ lang: en-GB
 
 A _$G$-linearisation_ on a line bundle $L$ is an action $\overline{\sigma}: G \times L \rightarrow L$ such that
 
-- the diagram
-![git-linearisation](../assets/img/git-linearisation.jpg)
-commutes;
+- the diagram (INSERT) commutes;
 $$
 \array{
     G \times L &\overset{\overline{\sigma}}{\to}& L

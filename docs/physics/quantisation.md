@@ -1,3 +1,3 @@
-# Quantisation
+# Geometric Quantisation
 
-## Geometric Quantisation
+## Prequantisation

@@ -1,14 +1,8 @@
----
-lang: en-GB
----
+# Cheatsheets
 
-# Linux Programming
+## Linux Shell
 
-## Cheatsheets
-
-### Linux Shell
-
-#### Directory and File Manipulation
+### Directory and File Manipulation
 
 - Search recursively through directories and moves files of a particular format to a new directory:
     
@@ -16,15 +10,15 @@ lang: en-GB
 find /dir/with/pdfs -name "*.pdf" -exec mv {} /new/dir \;
 ```
 
-### Miscellaneous
+## Miscellaneous
 
-#### Local Zotero Website Publishing with Zotsite
+### Local Zotero Website Publishing with Zotsite
 
 ```zotsite export -o <BASE_DIR>/zotsite/public -c <BASE_DIR>/zotsite/config```
 
-### Python
+## Python
 
-#### Virtual Environments for Local Development
+### Virtual Environments for Local Development
 
 The following command will create a new directory within your current directory, which in this example will be named 'virtual':
 
@@ -34,9 +28,9 @@ python -m venv virtual
 
 The `venv` creates the directory 'virtual' and places the necessary virtual environment files inside of it. In particular within the `virtual/bin` tree will be the `python` and `pip` executables.
 
-### Git
+## Git
 
-#### Setup
+### Setup
 
 - Set a name that is identifiable for credit when review version history:
 
@@ -46,7 +40,7 @@ The `venv` creates the directory 'virtual' and places the necessary virtual envi
 
 ```git config --global user.email “[valid-email]”```
 
-#### Setup & Initialisation
+### Setup & Initialisation
 
 - Initialise an existing repository as an existing repository:
 
@@ -56,7 +50,7 @@ The `venv` creates the directory 'virtual' and places the necessary virtual envi
 
 ```git clone [url]```
 
-#### Stage & Snapshot
+### Stage & Snapshot
 
 - Show modified files in working directory, staged for your next commit:
 

@@ -1,12 +1,6 @@
----
-lang: en-GB
----
+# Moment Maps
 
-# Symplectic Geometry
-
-## Moment Maps
-
-## Symplectic Cutting
+# Symplectic Cutting
 
 Let $(M,\omega)$ be symplectic with a Hamiltonian $S^{1}$-action whose moment map is $\mu: M \rightarrow \R$. Consider now the product $M \times \mathbb{C}$ equipped with the product symplectic structure and the $S^{1}$-action
 $$e^{i \theta} \cdot (m,\xi) := (e^{i \theta} \cdot m, e^{-i \theta} \xi),$$

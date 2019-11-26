@@ -4,6 +4,10 @@ module.exports = [
     ariaLabel: "Geometry",
     items: [
       {
+        text: "Geometry",
+        link: "/geometry/"
+      },
+      {
         text: "Algebraic",
         items: [
           {
@@ -13,6 +17,10 @@ module.exports = [
           {
             text: "Schemes",
             link: "/geometry/algebraic/schemes.html"
+          },
+          {
+            text: "Sheaves",
+            link: "/geometry/algebraic/sheaves.html"
           },
           {
             text: "Geometric Invariant Theory",

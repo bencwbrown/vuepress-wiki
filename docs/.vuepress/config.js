@@ -9,6 +9,7 @@ module.exports = ctx => ({
       description: 'Personal wiki for my research'
     }
   },
+
   head: [
     ['link', { rel: 'icon', href: `/logo.png` }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
@@ -20,6 +21,7 @@ module.exports = ctx => ({
     ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
+
   theme: '@vuepress/vue',
   themeConfig: {
     repo: 'bencwbrown/vuepress-wiki',
@@ -35,13 +37,15 @@ module.exports = ctx => ({
         lastUpdated: 'Last Updated',
         nav: require('./en'),
         sidebar: {
-          '/geometry/': getGeometrySidebar('Algebraic', 'Complex', 'Symplectic', 'Differential'),
-          '/algebra/': getAlgebraSidebar('Commutative', 'Non-Commutative', 'Representation Theory'),
-          '/physics/': getPhysicsSidebar('Theme', 'Introduction'),
+          '/geometry/': getGeometrySidebar('Algebraic Geometry', 'Complex Geometry', 'Symplectic Geometry', 'Differential Geometry'),
+          '/algebra/': getAlgebraSidebar('Category Theory', 'Commutative Algebra', 'Group Theory', 'Non-Commutative Algebra', 'Representation Theory'),
+          '/physics/': getPhysicsSidebar('Quantisation', 'String Theory'),
+          '/miscellaneous/': getMiscSidebar('Linux'),
         }
       }
     }
   },
+
   plugins: [
     ['@vuepress/back-to-top', true],
     ['@vuepress/pwa', {
@@ -50,7 +54,7 @@ module.exports = ctx => ({
     }],
     ['@vuepress/medium-zoom', true],
     ['@vuepress/google-analytics', {
-      ga: ''
+      ga: 'UA-120544103-2',
     }],
     ['container', {
       type: 'vue',
@@ -63,102 +67,135 @@ module.exports = ctx => ({
       after: '</UpgradePath>',
     }],
     ['flowchart'],
+    ['latex', {
+      macros: 
+      { 
+
+      }
+    }],
   ],
+
   extraWatchFiles: [
     '.vuepress/nav/en.js',
   ]
 })
 
-function getGeometrySidebar (geometryAlgebraic, geometryComplex, geometrySymplectic, geometryDifferential) {
+function getGeometrySidebar (groupA, groupB, groupC, groupD) {
   return [
     {
-      title: geometryAlgebraic,
+      title: groupA,
       collapsable: false,
-      sidebarDepth: 2,
+      sidebarDepth: 1,
       children: [
-        'varieties',
-        'schemes',
-        'sheaves',
-        'git'
+        './algebraic/varieties',
+        './algebraic/schemes',
+        './algebraic/sheaves',
+        './algebraic/git',
       ]
     },
     {
-      title: geometryComplex,
+      title: groupB,
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        'vector-bundles'
+        './complex/vector-bundles'
       ]
     },
     {
-      title: geometrySymplectic,
+      title: groupC,
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        'moment-maps'
+        './symplectic/moment-maps'
       ]
     },
     {
-      title: geometryDifferential,
+      title: groupD,
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        'connections'
+        './differential/connections'
       ]
     }
   ]
 }
 
-function getAlgebraSidebar (algebraCategory, algebraGroups, algebraCommutative, algebraNoncommutative, algebraRepresentation) {
-  return [
-    {
-      title: algebraCategory,
-      collapsable: false,
-      sidebarDepth: 2,
-      children: [
-      ]
-    },
-    {
-      title: algebraGroups,
-      collapsable: false,
-      sidebarDepth: 2,
-      children: [
-      ]
-    },
-    {
-      title: algebraCommutative,
-      collapsable: false,
-      sidebarDepth: 2,
-      children: [
-        'algebras'
-      ]
-    },
-    {
-      title: algebraNoncommutative,
-      collapsable: false,
-      sidebarDepth: 2,
-      children: [
-      ]
-    },
-    {
-      title: algebraRepresentation,
-      collapsable: false,
-      sidebarDepth: 2,
-      children: [
-      ]
-    }
-  ]
-}
-
-function getPhysicsSidebar (groupA, introductionA) {
+function getAlgebraSidebar (groupA, groupB, groupC, groupD, groupE) {
   return [
     {
       title: groupA,
       collapsable: false,
       sidebarDepth: 2,
       children: [
-//        ['', introductionA]
+        'category',
+      ]
+    },
+    {
+      title: groupB,
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        'commutative',
+      ]
+    },
+    {
+      title: groupC,
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        'group',
+      ]
+    },
+    {
+      title: groupD,
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        'noncommutative',
+      ]
+    },
+    {
+      title: groupE,
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        'representation',
+      ]
+    }
+  ]
+}
+
+function getPhysicsSidebar (groupA, groupB) {
+  return [
+    {
+      title: groupA,
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+          './quantisation',
+      ]
+    },
+    {
+    title: groupB,
+    collapsable: false,
+    sidebarDepth: 2,
+    children: [
+        './string'
+    ]
+  },
+  ]
+}
+
+function getMiscSidebar (groupA) {
+  return [
+    {
+      title: groupA,
+      collapsable: false,
+      sidebarDepth: 1,
+      children: [
+          './linux',
       ]
     },
   ]
 }
+
