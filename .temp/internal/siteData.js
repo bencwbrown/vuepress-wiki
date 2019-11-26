@@ -30,14 +30,6 @@ export const siteData = {
       "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
-      "frontmatter": {},
-      "regularPath": "/algebra/",
-      "relativePath": "algebra/README.md",
-      "key": "v-00212e1f",
-      "path": "/algebra/",
-      "lastUpdated": "11/26/2019, 2:54:33 AM"
-    },
-    {
       "title": "Category Theory",
       "frontmatter": {},
       "regularPath": "/algebra/category.html",
@@ -75,58 +67,20 @@ export const siteData = {
       "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
-      "title": "Group Theory",
-      "frontmatter": {},
-      "regularPath": "/algebra/group.html",
-      "relativePath": "algebra/group.md",
-      "key": "v-a9d49d2c",
-      "path": "/algebra/group.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Actions",
-          "slug": "actions"
-        },
-        {
-          "level": 2,
-          "title": "Group Action",
-          "slug": "group-action"
-        },
-        {
-          "level": 3,
-          "title": "Free Action",
-          "slug": "free-action"
-        },
-        {
-          "level": 3,
-          "title": "Semifree Action",
-          "slug": "semifree-action"
-        },
-        {
-          "level": 2,
-          "title": "Linear Algebraic Groups",
-          "slug": "linear-algebraic-groups"
-        },
-        {
-          "level": 3,
-          "title": "Affine Algebraic Group",
-          "slug": "affine-algebraic-group"
-        },
-        {
-          "level": 3,
-          "title": "Borel Subgroup",
-          "slug": "borel-subgroup"
-        }
-      ],
-      "lastUpdated": "11/26/2019, 2:54:33 AM"
-    },
-    {
       "title": "Lie Theory",
       "frontmatter": {},
       "regularPath": "/algebra/lie.html",
       "relativePath": "algebra/lie.md",
       "key": "v-78de648a",
       "path": "/algebra/lie.html",
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/algebra/",
+      "relativePath": "algebra/README.md",
+      "key": "v-00212e1f",
+      "path": "/algebra/",
       "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
@@ -376,6 +330,21 @@ export const siteData = {
         }
       ],
       "lastUpdated": "11/26/2019, 2:54:33 AM"
+    },
+    {
+      "title": "Toric Geometry",
+      "frontmatter": {},
+      "regularPath": "/geometry/complex/toric.html",
+      "relativePath": "geometry/complex/toric.md",
+      "key": "v-6d42f6ec",
+      "path": "/geometry/complex/toric.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Toric Varieties",
+          "slug": "toric-varieties"
+        }
+      ]
     },
     {
       "title": "Vector Bundles",
@@ -637,6 +606,37 @@ export const siteData = {
       "key": "v-1138a58a",
       "path": "/physics/supersymmetry.html",
       "lastUpdated": "11/25/2019, 8:35:35 PM"
+    },
+    {
+      "title": "Group Actions",
+      "frontmatter": {},
+      "regularPath": "/algebra/group.html",
+      "relativePath": "algebra/group.md",
+      "key": "v-a9d49d2c",
+      "path": "/algebra/group.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Free Action",
+          "slug": "free-action"
+        },
+        {
+          "level": 2,
+          "title": "Semifree Action",
+          "slug": "semifree-action"
+        },
+        {
+          "level": 2,
+          "title": "Affine Algebraic Group",
+          "slug": "affine-algebraic-group"
+        },
+        {
+          "level": 2,
+          "title": "Borel Subgroup",
+          "slug": "borel-subgroup"
+        }
+      ],
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     }
   ],
   "themeConfig": {
@@ -684,6 +684,10 @@ export const siteData = {
               {
                 "text": "Complex",
                 "items": [
+                  {
+                    "text": "Toric Geometry",
+                    "link": "/geometry/complex/toric.html"
+                  },
                   {
                     "text": "Vector Bundles",
                     "link": "/geometry/complex/vector-bundles.html"
@@ -741,6 +745,7 @@ export const siteData = {
               "collapsable": false,
               "sidebarDepth": 2,
               "children": [
+                "./complex/toric",
                 "./complex/vector-bundles"
               ]
             },

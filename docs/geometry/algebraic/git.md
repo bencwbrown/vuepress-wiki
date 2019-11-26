@@ -9,15 +9,7 @@
 A _$G$-linearisation_ on a line bundle $L$ is an action $\overline{\sigma}: G \times L \rightarrow L$ such that
 
 - the diagram (INSERT) commutes;
-$$
-\array{
-    G \times L &\overset{\overline{\sigma}}{\to}& L
-    \\
-    \downarrow 1 \times π && \downarrow π
-    \\
-    G \times X &\overset{\sigma}{\to}& X
-}
-$$
+
 
 - the zero section of $L$ is $G$-stable. 
   

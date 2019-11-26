@@ -32,6 +32,10 @@ module.exports = [
         text: "Complex",
         items: [
           {
+            text: "Toric Geometry",
+            link: "/geometry/complex/toric.html"
+          },
+          {
             text: "Vector Bundles",
             link: "/geometry/complex/vector-bundles.html"
           }

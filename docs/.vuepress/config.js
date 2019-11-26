@@ -98,7 +98,8 @@ function getGeometrySidebar (groupA, groupB, groupC, groupD) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        './complex/vector-bundles'
+        './complex/toric',
+        './complex/vector-bundles',
       ]
     },
     {
@@ -106,7 +107,7 @@ function getGeometrySidebar (groupA, groupB, groupC, groupD) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        './symplectic/moment-maps'
+        './symplectic/moment-maps',
       ]
     },
     {

@@ -21,18 +21,6 @@ export const routes = [
     redirect: "/"
   },
   {
-    name: "v-00212e1f",
-    path: "/algebra/",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-00212e1f").then(next)
-    },
-  },
-  {
-    path: "/algebra/index.html",
-    redirect: "/algebra/"
-  },
-  {
     name: "v-c308dce8",
     path: "/algebra/category.html",
     component: GlobalLayout,
@@ -49,20 +37,24 @@ export const routes = [
     },
   },
   {
-    name: "v-a9d49d2c",
-    path: "/algebra/group.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-a9d49d2c").then(next)
-    },
-  },
-  {
     name: "v-78de648a",
     path: "/algebra/lie.html",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-78de648a").then(next)
     },
+  },
+  {
+    name: "v-00212e1f",
+    path: "/algebra/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-00212e1f").then(next)
+    },
+  },
+  {
+    path: "/algebra/index.html",
+    redirect: "/algebra/"
   },
   {
     name: "v-4c565c2e",
@@ -130,6 +122,14 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-1228cf5e").then(next)
+    },
+  },
+  {
+    name: "v-6d42f6ec",
+    path: "/geometry/complex/toric.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-6d42f6ec").then(next)
     },
   },
   {
@@ -250,6 +250,14 @@ export const routes = [
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
       ensureAsyncComponentsLoaded("Layout", "v-1138a58a").then(next)
+    },
+  },
+  {
+    name: "v-a9d49d2c",
+    path: "/algebra/group.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-a9d49d2c").then(next)
     },
   },
   {
