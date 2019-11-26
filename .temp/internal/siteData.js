@@ -35,7 +35,7 @@ export const siteData = {
       "relativePath": "algebra/README.md",
       "key": "v-00212e1f",
       "path": "/algebra/",
-      "lastUpdated": "11/25/2019, 8:35:35 PM"
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
       "title": "Category Theory",
@@ -56,7 +56,7 @@ export const siteData = {
           "slug": "coproduct"
         }
       ],
-      "lastUpdated": "11/25/2019, 8:35:35 PM"
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
       "title": "Commutative Algebra",
@@ -72,7 +72,7 @@ export const siteData = {
           "slug": "algebras"
         }
       ],
-      "lastUpdated": "11/25/2019, 8:35:35 PM"
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
       "title": "Group Theory",
@@ -118,7 +118,7 @@ export const siteData = {
           "slug": "borel-subgroup"
         }
       ],
-      "lastUpdated": "11/25/2019, 8:35:35 PM"
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
       "title": "Lie Theory",
@@ -127,7 +127,7 @@ export const siteData = {
       "relativePath": "algebra/lie.md",
       "key": "v-78de648a",
       "path": "/algebra/lie.html",
-      "lastUpdated": "11/25/2019, 8:35:35 PM"
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
       "title": "Non-Commutative Algebra",
@@ -136,7 +136,7 @@ export const siteData = {
       "relativePath": "algebra/noncommutative.md",
       "key": "v-4c565c2e",
       "path": "/algebra/noncommutative.html",
-      "lastUpdated": "11/25/2019, 8:35:35 PM"
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
       "title": "Representation Theory",
@@ -157,7 +157,7 @@ export const siteData = {
           "slug": "tensor-product"
         }
       ],
-      "lastUpdated": "11/25/2019, 8:35:35 PM"
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
       "title": "Geometry",
@@ -166,7 +166,7 @@ export const siteData = {
       "relativePath": "geometry/README.md",
       "key": "v-0c810501",
       "path": "/geometry/",
-      "lastUpdated": "11/25/2019, 8:35:35 PM"
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
       "title": "Algebraic Geometry",
@@ -227,7 +227,7 @@ export const siteData = {
           "slug": "closed-embeddings"
         }
       ],
-      "lastUpdated": "11/25/2019, 8:35:35 PM"
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
       "title": "Geometric Invariant Theory",
@@ -263,7 +263,7 @@ export const siteData = {
           "slug": "algebraic-symplectic-reduction-2"
         }
       ],
-      "lastUpdated": "11/25/2019, 8:35:35 PM"
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
       "title": "Schemes",
@@ -375,7 +375,7 @@ export const siteData = {
           "slug": "birational-equivalence"
         }
       ],
-      "lastUpdated": "11/25/2019, 8:35:35 PM"
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
       "title": "Vector Bundles",
@@ -430,7 +430,8 @@ export const siteData = {
           "title": "Projective Bundles",
           "slug": "projective-bundles"
         }
-      ]
+      ],
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
       "title": "Differential Geometry",
@@ -438,7 +439,8 @@ export const siteData = {
       "regularPath": "/geometry/differential/connections.html",
       "relativePath": "geometry/differential/connections.md",
       "key": "v-a7f50cac",
-      "path": "/geometry/differential/connections.html"
+      "path": "/geometry/differential/connections.html",
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
       "title": "Moment Maps",
@@ -446,7 +448,8 @@ export const siteData = {
       "regularPath": "/geometry/symplectic/moment-maps.html",
       "relativePath": "geometry/symplectic/moment-maps.md",
       "key": "v-0221ba6c",
-      "path": "/geometry/symplectic/moment-maps.html"
+      "path": "/geometry/symplectic/moment-maps.html",
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
       "title": "TODO:",
@@ -467,7 +470,7 @@ export const siteData = {
           "slug": "configuration"
         }
       ],
-      "lastUpdated": "11/25/2019, 8:35:35 PM"
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
       "title": "Miscellaneous",
@@ -475,7 +478,8 @@ export const siteData = {
       "regularPath": "/miscellaneous/",
       "relativePath": "miscellaneous/README.md",
       "key": "v-c766915a",
-      "path": "/miscellaneous/"
+      "path": "/miscellaneous/",
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
       "title": "Cheatsheets",
@@ -535,7 +539,8 @@ export const siteData = {
           "title": "Stage & Snapshot",
           "slug": "stage-snapshot"
         }
-      ]
+      ],
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
       "title": "Manuals and READMEs",
@@ -579,7 +584,8 @@ export const siteData = {
           "title": "vuepress-plugin-latex",
           "slug": "vuepress-plugin-latex"
         }
-      ]
+      ],
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
       "frontmatter": {},
@@ -587,7 +593,7 @@ export const siteData = {
       "relativePath": "physics/README.md",
       "key": "v-6e194161",
       "path": "/physics/",
-      "lastUpdated": "11/25/2019, 8:35:35 PM"
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
       "title": "Gauge Theory",
@@ -612,7 +618,7 @@ export const siteData = {
           "slug": "prequantisation"
         }
       ],
-      "lastUpdated": "11/25/2019, 8:35:35 PM"
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
       "title": "String Theory",
