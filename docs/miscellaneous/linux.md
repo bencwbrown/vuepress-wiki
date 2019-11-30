@@ -209,7 +209,7 @@ name foo bar
 ```
 
 - An example shell script that would determine whether a given name is a file or directory:
-- 
+ 
 ```bash
 #./cmdargs.sh
 
@@ -301,7 +301,72 @@ if [ -f /etc/resolv.conf -a -f /etc/hosts ]; then
 fi
 ```
 
+### Function examples
 
+- Extract an archive regardless of file type:
+
+```bash
+extract () {
+    if [ -f $1 ]; then
+        case $1 in
+            *.tar.bz2)  tar -jxvf $1                        ;;
+            *.tar.gz)   tar -zxvf $1                        ;;
+            *.bz2)      bunzip2 $1                          ;;
+            *.dmg)      hdiutil mount $1                    ;;
+            *.gz)       gunzip $1                           ;;
+            *.tar)      tar -xvf $1                         ;;
+            *.tbz2)     tar -jxvf $1                        ;;
+            *.tgz)      tar -zxvf $1                        ;;
+            *.zip)      unzip $1                            ;;
+            *.ZIP)      unzip $1                            ;;
+            *.pax)      cat $1 | pax -r                     ;;
+            *.pax.Z)    uncompress $1 --stdout | pax -r     ;;
+            *.Z)        uncompress $1                       ;;
+            *)          echo "'$1' cannot be extracted/mounted via extract()" ;;
+        esac
+    else
+        echo "'$1' is not a valid file"
+    fi
+}
+```
+
+- Push dotfiles to a remote host:
+
+```bash
+push_dotfiles() {
+  local _host
+  for _host in "$2"; do
+    echo "run at $1@$_host"
+    ssh $1@$_host '
+      if [ ! $(which git) ]; then
+        for installer in apt-get yum port brew; do
+          if [ $(which $installer) ]; then break; fi
+        done
+        sudo $installer install git-core || exit
+      fi
+      git clone https://github.com/jivoi/dotfiles.git $HOME/.dot
+      ln -svf $HOME/.dot/{.bashrc,.cshrc,.gitconfig,.screenrc,.tmux.conf,.tmux.status.conf,.vimrc,.zshrc,bin} $HOME/
+      ln -svf $HOME/.dot/ssh_config $HOME/.ssh/config'
+  done
+}
+```
+
+- Determine size of a file or total size of a directory:
+
+```bash
+fs() {
+	if du -b /dev/null > /dev/null 2>&1; then
+		local arg=-sbh
+	else
+		local arg=-sh
+	fi
+	if [[ -n "$@" ]]; then
+		du $arg -- "$@"
+	else
+		du $arg .[^.]* *
+	fi
+}
+```
 
 ## Aliases
 
@@ -317,6 +382,17 @@ This can be turned into a function `add-alias` (say), which has inputs `alias na
         function add-alias {
         echo "alias $1='$2'" >> ~/.bash_aliases && source ~/.bash_aliases
 }
+```
+
+- Change the GNOME wallpaper every 60 seconds
+
+```bash
+while [[ 1 -eq 1 ]]; do
+  for i in $(echo /usr/share/backgrounds/*.jpg); do
+    gsettings set org.gnome.desktop.background picture-uri file:///${i}
+    sleep 60;
+  done
+done
 ```
 
 # Cheatsheets
