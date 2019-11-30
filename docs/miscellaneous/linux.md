@@ -190,13 +190,138 @@ The table below describes Additional Categories.
 
 ### Creating icons for the .desktop files
 
+# Linux Shell
 
+## Bash functions
+
+A basic example is:
+
+```bash
+name(){
+  arg1=$1
+  arg2=$2
+  command on $arg1
+}
+```
+which would be invoked via the following syntax
+```bash
+name foo bar
+```
+
+- An example shell script that would determine whether a given name is a file or directory:
+- 
+```bash
+#./cmdargs.sh
+
+#!/bin/bash
+file="$1"
+
+# User-defined function
+is_file_dir(){
+        # $f is local variable
+	local f="$1"
+        # file attributes comparisons using test i.e. [ ... ]
+	[ -f "$f" ] && { echo "$f is a regular file."; exit 0; }
+	[ -d "$f" ] && { echo "$f is a directory."; exit 0; }
+	[ -L "$f" ] && { echo "$f is a symbolic link."; exit 0; }
+	[ -x "$f" ] && { echo "$f is an executeble file."; exit 0; }
+}
+
+# make sure filename supplied as command line arg else die
+[ $# -eq 0 ] && { echo "Usage: $0 filename"; exit 1; }
+
+# invoke the is_file_dir and pass $file as arg
+is_file_dir "$file"
+```
+
+which would be invoked as
+
+```bash
+./cmdargs.sh /etc/resolv.conf
+./cmdargs.sh /bin/date
+./cmdargs.sh $HOME
+./cmdargs.sh /sbin
+```
+
+with sample outputs
+
+```bash
+/etc/resolv.conf is a regular file.
+/bin/date is a regular file.
+/home/ben is a directory.
+/sbin is a directory.
+```
+
+- An `if/then` example to check whether a __file__ exists or not, and print the output:
+
+```bash
+FILE=/etc/resolv.conf
+if [ -f "$FILE" ]; then
+    echo "$FILE exist"
+else 
+    echo "$FILE does not exist"
+fi
+```
+
+If instead one wanted to check whether a __directory__ exists, then one should replace the `-f` with `-d` like so:
+
+```bash
+FILE=/etc/resolv.conf
+if [ -d "$FILE" ]; then
+    echo "$FILE exist"
+else 
+    echo "$FILE does not exist"
+fi
+```
+
+For the negation, i.e. to check if a file does __not__ exist, then one should pass the `!` quantifier before the `-f` command:
+
+```bash
+FILE=/etc/docker
+if [ ! -f "$FILE" ]; then
+    echo "$FILE does not exist"
+fi
+```
+
+To include 'and' conditional statements, one should pass the `-a` or `&&` quantifier between each statement:
+
+```bash
+FILE=/etc/docker
+if [ -f /etc/resolv.conf -a -f /etc/hosts ]; then
+    echo "$FILE is a directory"
+fi
+```
+
+equivalently:
+
+```bash
+FILE=/etc/docker
+if [ -f /etc/resolv.conf -a -f /etc/hosts ]; then
+    echo "$FILE is a directory"
+fi
+```
+
+
+
+## Aliases
+
+- Adds a new alias and load it immediately via the command line:
+
+```bash
+echo "alias aliasname='command'" >> ~/.bash_aliases && source ~/.bash_aliases
+```
+
+This can be turned into a function `add-alias` (say), which has inputs `alias name` and `alias command`:
+
+```bash
+        function add-alias {
+        echo "alias $1='$2'" >> ~/.bash_aliases && source ~/.bash_aliases
+}
+```
 
 # Cheatsheets
 
-## Linux Shell
-
-### Directory and File Manipulation
+## Directory and File Manipulation
 
 - Search recursively through directories and moves files of a particular format to a new directory:
     
