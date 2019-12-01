@@ -397,6 +397,31 @@ done
 
 # Cheatsheets
 
+## Ssh
+
+- Send a command remotely via ssh:
+
+```bash
+ssh -p 22 user@example.com -t 'sudo apt-get update && sudo apt-get upgrade -y'
+```
+
+Here, the `-t` option is used if user interaction is required, which in this example would be to under the password of the user.
+
+- To send multiple commands in one ssh connection, separate the commands with a semi-colon `;`:
+
+```bash
+ssh -p 22 user@example.com 'cd ~/Downloads; ls -alh'
+```
+
+The problem is as you may suspect, your .bashrc is not being sourced. You had the right idea by adding the -l flag but what you really need in this case is the -i flag to spawn an interactive shell, in-turn sourcing your .bashrc prior to command execution. 
+
+- By default, the remote user's `.bashrc` and `.bash_profile` files are not sourced when sending a command via ssh, so for example commands relying on the remote user's `$PATH` configuration will respond with the application not being run. To remedy this, one can spawn an interactive shell prior to executing the command by prefixing `"bash -i -c '<ssh command>'"` like so:
+
+```bash
+ssh user@example.com -t 'bash -i -c "cd /var/www/html && npm run build"'
+
+```
+
 ## Directory and File Manipulation
 
 - Search recursively through directories and moves files of a particular format to a new directory:
