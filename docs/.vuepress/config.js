@@ -1,4 +1,7 @@
-const { fs, path } = require('@vuepress/shared-utils')
+const {
+  fs,
+  path
+} = require('@vuepress/shared-utils')
 
 module.exports = ctx => ({
   dest: '../html',
@@ -11,15 +14,43 @@ module.exports = ctx => ({
   },
 
   head: [
-    ['link', { rel: 'icon', href: `/logo.png` }],
-    ['link', { rel: 'manifest', href: '/manifest.json' }],
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['link', { rel: 'apple-touch-icon', href: `/icons/apple-touch-icon-152x152.png` }],
-    ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
-    ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
-    ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
+    ['link', {
+      rel: 'icon',
+      href: `/logo.png`
+    }],
+    ['link', {
+      rel: 'manifest',
+      href: '/manifest.json'
+    }],
+    ['meta', {
+      name: 'theme-color',
+      content: '#3eaf7c'
+    }],
+    ['meta', {
+      name: 'apple-mobile-web-app-capable',
+      content: 'yes'
+    }],
+    ['meta', {
+      name: 'apple-mobile-web-app-status-bar-style',
+      content: 'black'
+    }],
+    ['link', {
+      rel: 'apple-touch-icon',
+      href: `/icons/apple-touch-icon-152x152.png`
+    }],
+    ['link', {
+      rel: 'mask-icon',
+      href: '/icons/safari-pinned-tab.svg',
+      color: '#3eaf7c'
+    }],
+    ['meta', {
+      name: 'msapplication-TileImage',
+      content: '/icons/msapplication-icon-144x144.png'
+    }],
+    ['meta', {
+      name: 'msapplication-TileColor',
+      content: '#000000'
+    }]
   ],
 
   theme: '@vuepress/vue',
@@ -62,15 +93,17 @@ module.exports = ctx => ({
       before: '<pre class="vue-container"><code>',
       after: '</code></pre>',
     }],
+
     ['container', {
       type: 'upgrade',
       before: info => `<UpgradePath title="${info}">`,
       after: '</UpgradePath>',
     }],
+
     ['flowchart'],
+
     ['latex', {
-      macros: 
-      { 
+      macros: {
 
       }
     }],
@@ -81,9 +114,8 @@ module.exports = ctx => ({
   ]
 })
 
-function getGeometrySidebar (groupA, groupB, groupC, groupD) {
-  return [
-    {
+function getGeometrySidebar(groupA, groupB, groupC, groupD) {
+  return [{
       title: groupA,
       collapsable: false,
       sidebarDepth: 1,
@@ -122,22 +154,19 @@ function getGeometrySidebar (groupA, groupB, groupC, groupD) {
   ]
 }
 
-function getTopologySidebar (groupA) {
-  return [
-    {
-      title: groupA,
-      collapsable: false,
-      sidebarDepth: 1,
-      children: [
-        './cohomology/equivariant'
-      ]
-    }
-  ]
+function getTopologySidebar(groupA) {
+  return [{
+    title: groupA,
+    collapsable: false,
+    sidebarDepth: 1,
+    children: [
+      './cohomology/equivariant'
+    ]
+  }]
 }
 
-function getAlgebraSidebar (groupA, groupB, groupC, groupD, groupE) {
-  return [
-    {
+function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE) {
+  return [{
       title: groupA,
       collapsable: false,
       sidebarDepth: 2,
@@ -180,37 +209,33 @@ function getAlgebraSidebar (groupA, groupB, groupC, groupD, groupE) {
   ]
 }
 
-function getPhysicsSidebar (groupA, groupB) {
-  return [
-    {
+function getPhysicsSidebar(groupA, groupB) {
+  return [{
       title: groupA,
       collapsable: false,
       sidebarDepth: 2,
       children: [
-          './quantisation',
+        './quantisation',
       ]
     },
     {
-    title: groupB,
-    collapsable: false,
-    sidebarDepth: 2,
-    children: [
-        './string'
-    ]
-  },
-  ]
-}
-
-function getMiscSidebar (groupA) {
-  return [
-    {
-      title: groupA,
+      title: groupB,
       collapsable: false,
-      sidebarDepth: 1,
+      sidebarDepth: 2,
       children: [
-          './linux',
+        './string'
       ]
     },
   ]
 }
 
+function getMiscSidebar(groupA) {
+  return [{
+    title: groupA,
+    collapsable: false,
+    sidebarDepth: 1,
+    children: [
+      './linux',
+    ]
+  }, ]
+}

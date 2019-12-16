@@ -30,14 +30,6 @@ export const siteData = {
       "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
-      "frontmatter": {},
-      "regularPath": "/algebra/",
-      "relativePath": "algebra/README.md",
-      "key": "v-00212e1f",
-      "path": "/algebra/",
-      "lastUpdated": "11/26/2019, 2:54:33 AM"
-    },
-    {
       "title": "Commutative Algebra",
       "frontmatter": {},
       "regularPath": "/algebra/commutative.html",
@@ -51,6 +43,14 @@ export const siteData = {
           "slug": "algebras"
         }
       ],
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/algebra/",
+      "relativePath": "algebra/README.md",
+      "key": "v-00212e1f",
+      "path": "/algebra/",
       "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
@@ -140,15 +140,6 @@ export const siteData = {
       "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
-      "title": "Geometry",
-      "frontmatter": {},
-      "regularPath": "/geometry/",
-      "relativePath": "geometry/README.md",
-      "key": "v-0c810501",
-      "path": "/geometry/",
-      "lastUpdated": "11/26/2019, 2:54:33 AM"
-    },
-    {
       "title": "Algebraic Geometry",
       "frontmatter": {},
       "regularPath": "/geometry/algebraic/algebraic.html",
@@ -207,6 +198,15 @@ export const siteData = {
           "slug": "closed-embeddings"
         }
       ],
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
+    },
+    {
+      "title": "Geometry",
+      "frontmatter": {},
+      "regularPath": "/geometry/",
+      "relativePath": "geometry/README.md",
+      "key": "v-0c810501",
+      "path": "/geometry/",
       "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
@@ -483,6 +483,40 @@ export const siteData = {
       "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
+      "title": "Manuals and READMEs",
+      "frontmatter": {},
+      "regularPath": "/miscellaneous/manuals.html",
+      "relativePath": "miscellaneous/manuals.md",
+      "key": "v-441946ea",
+      "path": "/miscellaneous/manuals.html",
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/miscellaneous/manuals/pypdfocr.html",
+      "relativePath": "miscellaneous/manuals/pypdfocr.md",
+      "key": "v-f3cfeab4",
+      "path": "/miscellaneous/manuals/pypdfocr.html",
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
+    },
+    {
+      "title": "Gauge Theory",
+      "frontmatter": {},
+      "regularPath": "/physics/gauge.html",
+      "relativePath": "physics/gauge.md",
+      "key": "v-404fef6c",
+      "path": "/physics/gauge.html",
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
+    },
+    {
+      "frontmatter": {},
+      "regularPath": "/physics/",
+      "relativePath": "physics/README.md",
+      "key": "v-6e194161",
+      "path": "/physics/",
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
+    },
+    {
       "title": "General Reference",
       "frontmatter": {},
       "regularPath": "/miscellaneous/linux.html",
@@ -579,20 +613,28 @@ export const siteData = {
       "lastUpdated": "12/1/2019, 1:41:56 AM"
     },
     {
-      "title": "Manuals and READMEs",
+      "title": "Geometric Quantisation",
       "frontmatter": {},
-      "regularPath": "/miscellaneous/manuals.html",
-      "relativePath": "miscellaneous/manuals.md",
-      "key": "v-441946ea",
-      "path": "/miscellaneous/manuals.html",
-      "lastUpdated": "11/25/2019, 8:35:35 PM"
+      "regularPath": "/physics/quantisation.html",
+      "relativePath": "physics/quantisation.md",
+      "key": "v-1aa2af14",
+      "path": "/physics/quantisation.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Prequantisation",
+          "slug": "prequantisation"
+        }
+      ],
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
+      "title": "String Theory",
       "frontmatter": {},
-      "regularPath": "/miscellaneous/manuals/pypdfocr.html",
-      "relativePath": "miscellaneous/manuals/pypdfocr.md",
-      "key": "v-f3cfeab4",
-      "path": "/miscellaneous/manuals/pypdfocr.html",
+      "regularPath": "/physics/string.html",
+      "relativePath": "physics/string.md",
+      "key": "v-2c420cb8",
+      "path": "/physics/string.html",
       "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
@@ -624,46 +666,30 @@ export const siteData = {
       "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
+      "title": "Equivariant Cohomology",
       "frontmatter": {},
-      "regularPath": "/physics/",
-      "relativePath": "physics/README.md",
-      "key": "v-6e194161",
-      "path": "/physics/",
-      "lastUpdated": "11/26/2019, 2:54:33 AM"
-    },
-    {
-      "title": "Gauge Theory",
-      "frontmatter": {},
-      "regularPath": "/physics/gauge.html",
-      "relativePath": "physics/gauge.md",
-      "key": "v-404fef6c",
-      "path": "/physics/gauge.html",
-      "lastUpdated": "11/25/2019, 8:35:35 PM"
-    },
-    {
-      "title": "Geometric Quantisation",
-      "frontmatter": {},
-      "regularPath": "/physics/quantisation.html",
-      "relativePath": "physics/quantisation.md",
-      "key": "v-1aa2af14",
-      "path": "/physics/quantisation.html",
+      "regularPath": "/topology/cohomology/equivariant.html",
+      "relativePath": "topology/cohomology/equivariant.md",
+      "key": "v-5e21026a",
+      "path": "/topology/cohomology/equivariant.html",
       "headers": [
         {
           "level": 2,
-          "title": "Prequantisation",
-          "slug": "prequantisation"
+          "title": "Motivation",
+          "slug": "motivation"
+        },
+        {
+          "level": 2,
+          "title": "Via Classifying Bundles",
+          "slug": "via-classifying-bundles"
+        },
+        {
+          "level": 3,
+          "title": "Independence of $E$",
+          "slug": "independence-of"
         }
       ],
-      "lastUpdated": "11/26/2019, 2:54:33 AM"
-    },
-    {
-      "title": "String Theory",
-      "frontmatter": {},
-      "regularPath": "/physics/string.html",
-      "relativePath": "physics/string.md",
-      "key": "v-2c420cb8",
-      "path": "/physics/string.html",
-      "lastUpdated": "11/25/2019, 8:35:35 PM"
+      "lastUpdated": "12/16/2019, 12:46:53 AM"
     },
     {
       "title": "Supersymmetry",
@@ -675,20 +701,20 @@ export const siteData = {
       "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
-      "title": "Cohomology",
+      "title": "Topology",
       "frontmatter": {},
       "regularPath": "/topology/",
       "relativePath": "topology/README.md",
       "key": "v-06cc6421",
-      "path": "/topology/"
-    },
-    {
-      "title": "Equivariant Cohomology",
-      "frontmatter": {},
-      "regularPath": "/topology/cohomology/equivariant.html",
-      "relativePath": "topology/cohomology/equivariant.md",
-      "key": "v-5e21026a",
-      "path": "/topology/cohomology/equivariant.html"
+      "path": "/topology/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Contents",
+          "slug": "contents"
+        }
+      ],
+      "lastUpdated": "12/16/2019, 12:46:53 AM"
     }
   ],
   "themeConfig": {

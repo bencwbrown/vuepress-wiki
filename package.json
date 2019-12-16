@@ -49,7 +49,7 @@
     "textlint-rule-terminology": "^1.1.30",
     "textlint-rule-write-good": "^1.6.2",
     "vue-toasted": "^1.1.25",
-    "vuepress": "^1.0.0-rc.1",
+    "vuepress": "^1.2.0",
     "vuepress-plugin-flowchart": "^1.4.2"
   },
   "dependencies": {
@@ -58,6 +58,7 @@
     "ajv": "^6.10.2",
     "ajv-errors": "^1.0.1",
     "katex": "^0.11.1",
+    "moment": "^2.24.0",
     "vuepress-plugin-code-copy": "^1.0.4",
     "vuepress-plugin-export": "^0.2.0",
     "vuepress-plugin-global-toc": "^1.0.1",
