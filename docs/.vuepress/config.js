@@ -38,6 +38,7 @@ module.exports = ctx => ({
         nav: require('./en'),
         sidebar: {
           '/geometry/': getGeometrySidebar('Algebraic Geometry', 'Complex Geometry', 'Symplectic Geometry', 'Differential Geometry'),
+          '/topology/': getTopologySidebar('Cohomology'),
           '/algebra/': getAlgebraSidebar('Category Theory', 'Commutative Algebra', 'Group Theory', 'Non-Commutative Algebra', 'Representation Theory'),
           '/physics/': getPhysicsSidebar('Quantisation', 'String Theory'),
           '/miscellaneous/': getMiscSidebar('Linux'),
@@ -116,6 +117,19 @@ function getGeometrySidebar (groupA, groupB, groupC, groupD) {
       sidebarDepth: 2,
       children: [
         './differential/connections'
+      ]
+    }
+  ]
+}
+
+function getTopologySidebar (groupA) {
+  return [
+    {
+      title: groupA,
+      collapsable: false,
+      sidebarDepth: 1,
+      children: [
+        './cohomology/equivariant'
       ]
     }
   ]

@@ -21,30 +21,6 @@ export const routes = [
     redirect: "/"
   },
   {
-    name: "v-c308dce8",
-    path: "/algebra/category.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-c308dce8").then(next)
-    },
-  },
-  {
-    name: "v-693053ca",
-    path: "/algebra/commutative.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-693053ca").then(next)
-    },
-  },
-  {
-    name: "v-78de648a",
-    path: "/algebra/lie.html",
-    component: GlobalLayout,
-    beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-78de648a").then(next)
-    },
-  },
-  {
     name: "v-00212e1f",
     path: "/algebra/",
     component: GlobalLayout,
@@ -55,6 +31,38 @@ export const routes = [
   {
     path: "/algebra/index.html",
     redirect: "/algebra/"
+  },
+  {
+    name: "v-693053ca",
+    path: "/algebra/commutative.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-693053ca").then(next)
+    },
+  },
+  {
+    name: "v-c308dce8",
+    path: "/algebra/category.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-c308dce8").then(next)
+    },
+  },
+  {
+    name: "v-a9d49d2c",
+    path: "/algebra/group.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-a9d49d2c").then(next)
+    },
+  },
+  {
+    name: "v-78de648a",
+    path: "/algebra/lie.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-78de648a").then(next)
+    },
   },
   {
     name: "v-4c565c2e",
@@ -253,11 +261,23 @@ export const routes = [
     },
   },
   {
-    name: "v-a9d49d2c",
-    path: "/algebra/group.html",
+    name: "v-06cc6421",
+    path: "/topology/",
     component: GlobalLayout,
     beforeEnter: (to, from, next) => {
-      ensureAsyncComponentsLoaded("Layout", "v-a9d49d2c").then(next)
+      ensureAsyncComponentsLoaded("Layout", "v-06cc6421").then(next)
+    },
+  },
+  {
+    path: "/topology/index.html",
+    redirect: "/topology/"
+  },
+  {
+    name: "v-5e21026a",
+    path: "/topology/cohomology/equivariant.html",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-5e21026a").then(next)
     },
   },
   {

@@ -30,6 +30,30 @@ export const siteData = {
       "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
+      "frontmatter": {},
+      "regularPath": "/algebra/",
+      "relativePath": "algebra/README.md",
+      "key": "v-00212e1f",
+      "path": "/algebra/",
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
+    },
+    {
+      "title": "Commutative Algebra",
+      "frontmatter": {},
+      "regularPath": "/algebra/commutative.html",
+      "relativePath": "algebra/commutative.md",
+      "key": "v-693053ca",
+      "path": "/algebra/commutative.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Algebras",
+          "slug": "algebras"
+        }
+      ],
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
+    },
+    {
       "title": "Category Theory",
       "frontmatter": {},
       "regularPath": "/algebra/category.html",
@@ -51,20 +75,30 @@ export const siteData = {
       "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
-      "title": "Commutative Algebra",
+      "title": "Group Actions",
       "frontmatter": {},
-      "regularPath": "/algebra/commutative.html",
-      "relativePath": "algebra/commutative.md",
-      "key": "v-693053ca",
-      "path": "/algebra/commutative.html",
+      "regularPath": "/algebra/group.html",
+      "relativePath": "algebra/group.md",
+      "key": "v-a9d49d2c",
+      "path": "/algebra/group.html",
       "headers": [
         {
           "level": 2,
-          "title": "Algebras",
-          "slug": "algebras"
+          "title": "Affine Algebraic Group",
+          "slug": "affine-algebraic-group"
+        },
+        {
+          "level": 2,
+          "title": "Borel Subgroup",
+          "slug": "borel-subgroup"
+        },
+        {
+          "level": 2,
+          "title": "Group Presentations",
+          "slug": "group-presentations"
         }
       ],
-      "lastUpdated": "11/26/2019, 2:54:33 AM"
+      "lastUpdated": "11/29/2019, 10:04:46 AM"
     },
     {
       "title": "Lie Theory",
@@ -73,14 +107,6 @@ export const siteData = {
       "relativePath": "algebra/lie.md",
       "key": "v-78de648a",
       "path": "/algebra/lie.html",
-      "lastUpdated": "11/26/2019, 2:54:33 AM"
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/algebra/",
-      "relativePath": "algebra/README.md",
-      "key": "v-00212e1f",
-      "path": "/algebra/",
       "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
@@ -217,7 +243,7 @@ export const siteData = {
           "slug": "algebraic-symplectic-reduction-2"
         }
       ],
-      "lastUpdated": "11/26/2019, 2:54:33 AM"
+      "lastUpdated": "11/26/2019, 11:02:00 AM"
     },
     {
       "title": "Schemes",
@@ -343,8 +369,14 @@ export const siteData = {
           "level": 2,
           "title": "Toric Varieties",
           "slug": "toric-varieties"
+        },
+        {
+          "level": 2,
+          "title": "Quotients of affine toric varieties",
+          "slug": "quotients-of-affine-toric-varieties"
         }
-      ]
+      ],
+      "lastUpdated": "12/1/2019, 3:53:24 AM"
     },
     {
       "title": "Vector Bundles",
@@ -451,7 +483,7 @@ export const siteData = {
       "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
-      "title": "Cheatsheets",
+      "title": "General Reference",
       "frontmatter": {},
       "regularPath": "/miscellaneous/linux.html",
       "relativePath": "miscellaneous/linux.md",
@@ -460,11 +492,46 @@ export const siteData = {
       "headers": [
         {
           "level": 2,
-          "title": "Linux Shell",
-          "slug": "linux-shell"
+          "title": "Creating .desktop entries",
+          "slug": "creating-desktop-entries"
         },
         {
           "level": 3,
+          "title": "Template entry",
+          "slug": "template-entry"
+        },
+        {
+          "level": 3,
+          "title": "Categories",
+          "slug": "categories"
+        },
+        {
+          "level": 3,
+          "title": "Creating icons for the .desktop files",
+          "slug": "creating-icons-for-the-desktop-files"
+        },
+        {
+          "level": 2,
+          "title": "Bash functions",
+          "slug": "bash-functions"
+        },
+        {
+          "level": 3,
+          "title": "Function examples",
+          "slug": "function-examples"
+        },
+        {
+          "level": 2,
+          "title": "Aliases",
+          "slug": "aliases"
+        },
+        {
+          "level": 2,
+          "title": "Ssh",
+          "slug": "ssh"
+        },
+        {
+          "level": 2,
           "title": "Directory and File Manipulation",
           "slug": "directory-and-file-manipulation"
         },
@@ -509,7 +576,7 @@ export const siteData = {
           "slug": "stage-snapshot"
         }
       ],
-      "lastUpdated": "11/26/2019, 2:54:33 AM"
+      "lastUpdated": "12/1/2019, 1:41:56 AM"
     },
     {
       "title": "Manuals and READMEs",
@@ -608,35 +675,20 @@ export const siteData = {
       "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
-      "title": "Group Actions",
+      "title": "Cohomology",
       "frontmatter": {},
-      "regularPath": "/algebra/group.html",
-      "relativePath": "algebra/group.md",
-      "key": "v-a9d49d2c",
-      "path": "/algebra/group.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "Free Action",
-          "slug": "free-action"
-        },
-        {
-          "level": 2,
-          "title": "Semifree Action",
-          "slug": "semifree-action"
-        },
-        {
-          "level": 2,
-          "title": "Affine Algebraic Group",
-          "slug": "affine-algebraic-group"
-        },
-        {
-          "level": 2,
-          "title": "Borel Subgroup",
-          "slug": "borel-subgroup"
-        }
-      ],
-      "lastUpdated": "11/26/2019, 2:54:33 AM"
+      "regularPath": "/topology/",
+      "relativePath": "topology/README.md",
+      "key": "v-06cc6421",
+      "path": "/topology/"
+    },
+    {
+      "title": "Equivariant Cohomology",
+      "frontmatter": {},
+      "regularPath": "/topology/cohomology/equivariant.html",
+      "relativePath": "topology/cohomology/equivariant.md",
+      "key": "v-5e21026a",
+      "path": "/topology/cohomology/equivariant.html"
     }
   ],
   "themeConfig": {
@@ -715,6 +767,25 @@ export const siteData = {
             ]
           },
           {
+            "text": "Topology",
+            "ariaLabel": "Topology",
+            "items": [
+              {
+                "text": "Topology",
+                "link": "/topology/"
+              },
+              {
+                "text": "Cohomology",
+                "items": [
+                  {
+                    "text": "Equivariant Cohomology",
+                    "link": "/topology/cohomology/equivariant.html"
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "text": "Algebra",
             "link": "/algebra/"
           },
@@ -763,6 +834,16 @@ export const siteData = {
               "sidebarDepth": 2,
               "children": [
                 "./differential/connections"
+              ]
+            }
+          ],
+          "/topology/": [
+            {
+              "title": "Cohomology",
+              "collapsable": false,
+              "sidebarDepth": 1,
+              "children": [
+                "./cohomology/equivariant"
               ]
             }
           ],

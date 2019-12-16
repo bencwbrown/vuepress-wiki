@@ -62,6 +62,25 @@ module.exports = [
     ]
   },
   {
+    text: "Topology",
+    ariaLabel: "Topology",
+    items: [
+      {
+        text: "Topology",
+        link: "/topology/"
+      },
+      {
+        text: "Cohomology",
+        items: [
+          {
+            text: "Equivariant Cohomology",
+            link: "/topology/cohomology/equivariant.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
     text: "Algebra",
     link: "/algebra/"
   },
