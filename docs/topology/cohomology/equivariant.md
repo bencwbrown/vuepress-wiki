@@ -53,4 +53,4 @@ $$
 onto the second factor gives rise to a map
 $$
     (X \times E) / G \rightarrow E/G.
-$$
+$$ 

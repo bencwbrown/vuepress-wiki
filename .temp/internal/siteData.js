@@ -101,21 +101,21 @@ export const siteData = {
       "lastUpdated": "11/29/2019, 10:04:46 AM"
     },
     {
-      "title": "Non-Commutative Algebra",
-      "frontmatter": {},
-      "regularPath": "/algebra/noncommutative.html",
-      "relativePath": "algebra/noncommutative.md",
-      "key": "v-4c565c2e",
-      "path": "/algebra/noncommutative.html",
-      "lastUpdated": "11/26/2019, 2:54:33 AM"
-    },
-    {
       "title": "Lie Theory",
       "frontmatter": {},
       "regularPath": "/algebra/lie.html",
       "relativePath": "algebra/lie.md",
       "key": "v-78de648a",
       "path": "/algebra/lie.html",
+      "lastUpdated": "11/26/2019, 2:54:33 AM"
+    },
+    {
+      "title": "Non-Commutative Algebra",
+      "frontmatter": {},
+      "regularPath": "/algebra/noncommutative.html",
+      "relativePath": "algebra/noncommutative.md",
+      "key": "v-4c565c2e",
+      "path": "/algebra/noncommutative.html",
       "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
@@ -579,29 +579,11 @@ export const siteData = {
       "lastUpdated": "12/1/2019, 1:41:56 AM"
     },
     {
-      "title": "Manuals and READMEs",
-      "frontmatter": {},
-      "regularPath": "/miscellaneous/manuals.html",
-      "relativePath": "miscellaneous/manuals.md",
-      "key": "v-441946ea",
-      "path": "/miscellaneous/manuals.html",
-      "lastUpdated": "11/25/2019, 8:35:35 PM"
-    },
-    {
       "frontmatter": {},
       "regularPath": "/miscellaneous/manuals/pypdfocr.html",
       "relativePath": "miscellaneous/manuals/pypdfocr.md",
       "key": "v-f3cfeab4",
       "path": "/miscellaneous/manuals/pypdfocr.html",
-      "lastUpdated": "11/25/2019, 8:35:35 PM"
-    },
-    {
-      "title": "Gauge Theory",
-      "frontmatter": {},
-      "regularPath": "/physics/gauge.html",
-      "relativePath": "physics/gauge.md",
-      "key": "v-404fef6c",
-      "path": "/physics/gauge.html",
       "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
@@ -633,6 +615,15 @@ export const siteData = {
       "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
+      "title": "Manuals and READMEs",
+      "frontmatter": {},
+      "regularPath": "/miscellaneous/manuals.html",
+      "relativePath": "miscellaneous/manuals.md",
+      "key": "v-441946ea",
+      "path": "/miscellaneous/manuals.html",
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
+    },
+    {
       "frontmatter": {},
       "regularPath": "/physics/",
       "relativePath": "physics/README.md",
@@ -641,12 +632,12 @@ export const siteData = {
       "lastUpdated": "11/26/2019, 2:54:33 AM"
     },
     {
-      "title": "String Theory",
+      "title": "Gauge Theory",
       "frontmatter": {},
-      "regularPath": "/physics/string.html",
-      "relativePath": "physics/string.md",
-      "key": "v-2c420cb8",
-      "path": "/physics/string.html",
+      "regularPath": "/physics/gauge.html",
+      "relativePath": "physics/gauge.md",
+      "key": "v-404fef6c",
+      "path": "/physics/gauge.html",
       "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
@@ -664,6 +655,15 @@ export const siteData = {
         }
       ],
       "lastUpdated": "11/26/2019, 2:54:33 AM"
+    },
+    {
+      "title": "String Theory",
+      "frontmatter": {},
+      "regularPath": "/physics/string.html",
+      "relativePath": "physics/string.md",
+      "key": "v-2c420cb8",
+      "path": "/physics/string.html",
+      "lastUpdated": "11/25/2019, 8:35:35 PM"
     },
     {
       "title": "Supersymmetry",
