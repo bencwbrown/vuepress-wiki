@@ -1,3 +1,7 @@
+---
+lang: en-GB
+---
+
 # Equivariant Cohomology
 
 ## Motivation
@@ -32,7 +36,7 @@ where $E$ is any contractible space on which $G$ acts freely.
 
 To show that the definition does not depend on the choice of $E$, we first note that if $G$ acts freely on $X$ then the projection
 $$
-    X \times X \rightarrow X
+    p_{X} : X \times E \rightarrow X
 $$
 onto the first factor gives rise to a map
 $$
@@ -48,9 +52,103 @@ $$
 $$
 The projection
 $$
-    X \times E \rightarrow E
+    p_{E} : X \times E \rightarrow E
 $$
 onto the second factor gives rise to a map
 $$
     (X \times E) / G \rightarrow E/G.
-$$ 
+$$
+The composition of this projection along with the section $s$ gives rise to a map
+$$
+    f := s \circ p : X/G \rightarrow E / G.
+$$
+Let
+$$
+        q_{X} : X \rightarrow X / G,\qquad q_{E} : E \rightarrow E / G,
+$$
+be the projections of $X$ and $E$ onto their quotient spaces under the respective $G$-action.
+
+::: warning Proposition
+Suppose that $G$ acts freely on $X$ and that $E$ is a contractible space on which $G$ acts freely. Any cross-section $s : X / G \rightarrow (X \times E) / G$ determines a unique $G$-equivariant map
+$$
+    h : X \rightarrow E
+$$
+which makes the diagram
+(insert diagram)
+commute.
+
+Convsersely, any $G$-equivariant map $h : X \rightarrow E$ determines a section $s : X/G \rightarrow (X \times E) / G$ and a map $f$ which makes the above diagram commute.
+
+Any two such sections are homotopic and hence the homotopy class of $(f,h)$ is unique, independent of the choice of $s$.
+:::
+
+This proposition is usually stated as a theorem about principal bundles: since $G$ acts freely on $X$we can consider $X$ as a principal bundle over
+$$
+    Y := X/G.
+$$
+Similarly we can regard $E$ as a principal bundle over
+$$
+    B := E/G.
+$$
+Then the above proposuition is equivalent to the following "classification theorem" for principal bundles:
+
+::: warning Theorem
+Let $Y$ be a topological space and $\pi : X \rightarrow Y$ a principal $G$-bundle. THen there exists a map
+$$
+    f : Y \rightarrow B
+$$
+and an isomorphism of principal bundles
+$$
+    \Phi : X \rightarrow f^{\ast}E
+$$
+where $f^{\ast}E$ is the pull-back of the bundle $E \rightarrow B$ to $Y$. Moreover $f$ and $\Phi$ are unique up to homotopy.
+:::
+
+This theorem can be reformulated as saying that there is a one-to-one correspondence between equivalence classes of principal $G$-bundles and homotopy classes of mappings $f : Y \rightarrow B$. In other words, the theorem reduces the classification problem for principal $G$-bundles over $Y$ to the homotopy problem of classifying maps of $Y$ into $B$ up to homotopy. For this reason the space $B$ is called the __classifying space__ for $G$ and the bundle $E \rightarrow B$ is called the __classifying bundle__.
+
+An important consequence of the above theorem is the following:
+
+::: warning Theorem
+If $E_{1}$ and $E_{2}$ are contractible spaces on which $G$ acts freely, they are equivalent as $G$-spaces. _I.e._, there exist $G$-equivariant maps
+$$
+    \phi_{1}: E_{1} \rightarrow E_{2},\qquad \psi : E_{2} \rightarrow E_{1},
+$$
+with $G$-equivariant homotopies
+$$
+    \psi \circ \phi \simeq \id_{E_{1}},\qquad \phi \circ \psi \simeq \id_{E_{2}}.
+$$
+:::
+
+::: warning Corollary
+The definition
+$$
+    H_{G}^{\ast}(X) := H^{\ast}\big( (X \times E) / G \big)
+$$
+is independent of the choice of $E$.
+:::
+
+### Existence of Classifying Spaces
+
+The previous section asserts that our definition of equivariant cohomology does not depend on which $E$ that we choose. However, it is still needed to be shown that such an $E$ exists, _i.e_ given a compact Lie group $G$ can we find a contractible space $E$ on which $G$ acts freely? If $G$ is a subgroup of a compact Lie group $K$ and also if we have found an $E$ that works for $K$, then restricting the $K$-action to the subgroup $G$ produces a free $G$-action. Every compact Lie group has a faithful linear representation, meaning that it can be embedded as a subgroup of $U(n)$ for large enough $n$. Thus it suffices to construct a space $E$ which is contractible and on which $U(n)$ acts freely.
+
+Let $V$ be a infinite-dimensional separable Hilbert space, say take
+$$
+    V = L^{2}[0,\infty),
+$$
+the space of square-integrable functions on the positive real number line, relative to the Lebesgue measure (any separable Hilbert space is isomorphic to one another).
+
+Let $E$ consist of the set of all $n$-tuples
+$$
+    \boldsymbol{v} = (v_{1},\ldots, v_{n}),\quad v_{i} \in V,\quad (v_{i},v_{j}) = \delta_{ij}.
+$$
+The group $U(n)$ acts on $E$ by
+$$
+    A\boldsymbol{v} = \boldsymbol{w} = (w_{1},\ldots, w_{n}),\quad w_{i} = \sum_{j} a_{ij}v_{j},
+$$
+and this action is clearly free.
+
+::: warning Proposition
+The space $E$ is contractible.
+:::
+
+Thus, with this proposition in hand, for any compact Lie group there exists a classifying space $E$ on which $G$ acts freely.

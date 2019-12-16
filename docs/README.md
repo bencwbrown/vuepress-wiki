@@ -5,6 +5,7 @@ tagLine: Create and publish fast, feature-rich sites in minutes
 heroImage: /icon.png
 actionText: Enter the wiki! →
 actionLink: /home
+lang: en-GB
 ---
 
 ### By Ben Brown

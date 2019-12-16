@@ -1,8 +1,5 @@
 # Algebraic Geometry
 
-
-$test$ $\mu \alpha \theta \hbar$
-
 ## Algebraic Varieties
 
 ### Quasi-Projective Varieties

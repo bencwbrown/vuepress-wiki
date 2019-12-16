@@ -10,3 +10,22 @@
 ## Configuration
 - Work out some form of reference/citation management (for Vuepress/markdown).
 - Try to implement custom macros for vuepress-plugin-latex (or the KaTeX node module).
+
+## Testing Ground
+
+:::: tabs
+
+::: tab title
+__markdown content__
+:::
+
+
+::: tab javascript
+``` javascript
+() => {
+  console.log('Javascript code example')
+}
+```
+:::
+
+::::

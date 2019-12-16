@@ -10,7 +10,7 @@ module.exports = ctx => ({
       lang: 'en-GB',
       title: 'Wiki',
       description: 'Personal wiki for my research'
-    }
+    },
   },
 
   head: [
@@ -65,13 +65,13 @@ module.exports = ctx => ({
         selectText: 'Languages',
         ariaLabel: 'Select language',
         editLinkText: 'Edit this page on GitHub',
-//        lastUpdated: 'Last Updated',
+        lastUpdated: 'Last Updated',
         nav: require('./en'),
         sidebar: {
           '/geometry/': getGeometrySidebar('Algebraic Geometry', 'Complex Geometry', 'Symplectic Geometry', 'Differential Geometry'),
           '/topology/': getTopologySidebar('Cohomology'),
           '/algebra/': getAlgebraSidebar('Category Theory', 'Commutative Algebra', 'Group Theory', 'Non-Commutative Algebra', 'Representation Theory'),
-          '/physics/': getPhysicsSidebar('Quantisation', 'String Theory'),
+          '/physics/': getPhysicsSidebar('Quantisation', 'String Theory', 'Supersymmetry'),
           '/miscellaneous/': getMiscSidebar('Linux'),
         }
       }
@@ -84,6 +84,7 @@ module.exports = ctx => ({
       serviceWorker: true,
       updatePopup: true
     }],
+    ['tabs'],
     ['@vuepress/medium-zoom', true],
     ['@vuepress/google-analytics', {
       ga: 'UA-120544103-2',
@@ -100,6 +101,10 @@ module.exports = ctx => ({
       after: '</UpgradePath>',
     }],
 
+//    ['@vuepress/last-updated', {
+//      transformer: timestamp => timestamp || new Date(),
+//    }],
+
     ['flowchart'],
 
     ['latex', {
@@ -107,17 +112,6 @@ module.exports = ctx => ({
 
       }
     }],
-
-    [
-      '@vuepress/last-updated',
-      {
-//        transformer: (timestamp, lang) => {
-//          // Don't forget to install moment yourself
-//         const moment = require('moment')
-//          moment.locale(lang)
-//          return moment(timestamp).fromNow()
-        }
-    ]
   ],
 
   extraWatchFiles: [
@@ -220,13 +214,13 @@ function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE) {
   ]
 }
 
-function getPhysicsSidebar(groupA, groupB) {
+function getPhysicsSidebar(groupA, groupB, groupC) {
   return [{
       title: groupA,
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        './quantisation',
+        'quantisation',
       ]
     },
     {
@@ -234,7 +228,15 @@ function getPhysicsSidebar(groupA, groupB) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        './string'
+        'string'
+      ]
+    },
+    {
+      title: groupC,
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        'supersymmetry'
       ]
     },
   ]
@@ -246,7 +248,7 @@ function getMiscSidebar(groupA) {
     collapsable: false,
     sidebarDepth: 1,
     children: [
-      './linux',
+      'linux',
     ]
   }, ]
 }
