@@ -65,7 +65,7 @@ module.exports = ctx => ({
         selectText: 'Languages',
         ariaLabel: 'Select language',
         editLinkText: 'Edit this page on GitHub',
-        lastUpdated: 'Last Updated',
+//        lastUpdated: 'Last Updated',
         nav: require('./en'),
         sidebar: {
           '/geometry/': getGeometrySidebar('Algebraic Geometry', 'Complex Geometry', 'Symplectic Geometry', 'Differential Geometry'),
@@ -107,6 +107,17 @@ module.exports = ctx => ({
 
       }
     }],
+
+    [
+      '@vuepress/last-updated',
+      {
+//        transformer: (timestamp, lang) => {
+//          // Don't forget to install moment yourself
+//         const moment = require('moment')
+//          moment.locale(lang)
+//          return moment(timestamp).fromNow()
+        }
+    ]
   ],
 
   extraWatchFiles: [
