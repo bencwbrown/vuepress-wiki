@@ -82,14 +82,115 @@ module.exports = [
   },
   {
     text: "Algebra",
-    link: "/algebra/"
+    ariaLabel: "Algebra",
+    items: [
+      {
+        text: "Algebra",
+        link: "/algebra/"
+      },
+      {
+        text: "Algebra",
+        items: [
+          {
+            text: "Introduction",
+            link: "/algebra/algebras/algebras.html"
+          }
+        ]
+      },
+      {
+        text: "Category Theory",
+        items: [
+          {
+            text: "Introduction",
+            link: "/algebra/categories/categories.html"
+          }
+        ]
+      },
+      {
+        text: "Group Theory",
+        items: [
+          {
+            text: "Introduction",
+            link: "/algebra/groups/groups.html"
+          },
+          {
+            text: "Lie Groups",
+            link: "/algebra/groups/lie.html"
+          }
+        ]
+      },
+      {
+        text: "Representation Theory",
+        items: [
+          {
+            text: "Introduction",
+            link: "/algebra/representation/representation.html"
+          }
+        ]
+      },
+      {
+        text: "Rings",
+        items: [
+          {
+            text: "Introduction",
+            link: "/algebra/rings/rings.html"
+          }
+        ]
+      },
+    ]
   },
   {
     text: "Physics",
-    link: "/physics/"
+    ariaLabel: "Physics",
+    items: [
+      {
+        text: "Physics",
+        link: "/physics/"
+      },
+      {
+        text: "Gauge Theory",
+        items: [
+          {
+            text: "Introduction",
+            link: "/physics/gauge/gauge.html"
+          }
+        ]
+      },
+      {
+        text: "Quantisation",
+        items: [
+          {
+            text: "Geometric Quantisation",
+            link: "/physics/quantisation/geometric.html"
+          },
+          {
+            text: "Deformation Quantisation",
+            link: "/physics/quantisation/deformation.html"
+          }
+        ]
+      },
+      {
+        text: "String Theory",
+        items: [
+          {
+            text: "Introduction",
+            link: "/physics/string/string.html"
+          }
+        ]
+      },
+      {
+        text: "Supersymmetry",
+        items: [
+          {
+            text: "Introduction",
+            link: "/physics/supersymmetry/intro.html"
+          }
+        ]
+      },
+    ]
   },
   {
     text: "Miscellaneous",
     link: "/miscellaneous/"
   }
-];
+]

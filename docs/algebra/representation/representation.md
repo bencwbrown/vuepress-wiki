@@ -1,8 +1,6 @@
-# Representation Theory
+# Constructions
 
-## Constructions
-
-### Tensor Product
+## Tensor Product
 
 The _tensor product_ of two representations $(\rho,V)$ and $(\sigma,W)$ of a group $G$ is the representation $(\rho \otimes \sigma, V \otimes W)$ defined by the condition
 $$

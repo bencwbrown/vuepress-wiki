@@ -70,9 +70,9 @@ module.exports = ctx => ({
         sidebar: {
           '/geometry/': getGeometrySidebar('Algebraic Geometry', 'Complex Geometry', 'Symplectic Geometry', 'Differential Geometry'),
           '/topology/': getTopologySidebar('Cohomology'),
-          '/algebra/': getAlgebraSidebar('Category Theory', 'Commutative Algebra', 'Group Theory', 'Non-Commutative Algebra', 'Representation Theory'),
-          '/physics/': getPhysicsSidebar('Quantisation', 'String Theory', 'Supersymmetry'),
-          '/miscellaneous/': getMiscSidebar('Linux'),
+          '/algebra/': getAlgebraSidebar('Algebras', 'Category Theory', 'Group Theory', 'Representation Theory', 'Rings'),
+          '/physics/': getPhysicsSidebar('Gauge Theory', 'Quantisation', 'String Theory', 'Supersymmetry'),
+          '/miscellaneous/': getMiscSidebar('Linux', 'Mathematics'),
         }
       }
     }
@@ -123,7 +123,7 @@ function getGeometrySidebar(groupA, groupB, groupC, groupD) {
   return [{
       title: groupA,
       collapsable: false,
-      sidebarDepth: 1,
+      sidebarDepth: 2,
       children: [
         './algebraic/varieties',
         './algebraic/schemes',
@@ -163,7 +163,7 @@ function getTopologySidebar(groupA) {
   return [{
     title: groupA,
     collapsable: false,
-    sidebarDepth: 1,
+    sidebarDepth: 2,
     children: [
       './cohomology/equivariant'
     ]
@@ -176,7 +176,8 @@ function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        'category',
+        'algebras/algebras',
+        'algebras/weil'
       ]
     },
     {
@@ -184,7 +185,7 @@ function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        'commutative',
+        'categories/categories'
       ]
     },
     {
@@ -192,7 +193,8 @@ function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        'group',
+        'groups/actions',
+        'groups/lie'
       ]
     },
     {
@@ -200,7 +202,7 @@ function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        'noncommutative',
+        'representation/representation',
       ]
     },
     {
@@ -208,19 +210,19 @@ function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        'representation',
+        'rings/rings',
       ]
     }
   ]
 }
 
-function getPhysicsSidebar(groupA, groupB, groupC) {
+function getPhysicsSidebar(groupA, groupB, groupC, groupD) {
   return [{
       title: groupA,
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        'quantisation',
+        'gauge/gauge',
       ]
     },
     {
@@ -228,7 +230,8 @@ function getPhysicsSidebar(groupA, groupB, groupC) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        'string'
+        'quantisation/deformation',
+        'quantisation/geometric'
       ]
     },
     {
@@ -236,19 +239,34 @@ function getPhysicsSidebar(groupA, groupB, groupC) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        'supersymmetry'
+        'string/string'
+      ]
+    },
+    {
+      title: groupD,
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        'supersymmetry/intro'
       ]
     },
   ]
 }
 
-function getMiscSidebar(groupA) {
+function getMiscSidebar(groupA, groupB) {
   return [{
     title: groupA,
     collapsable: false,
-    sidebarDepth: 1,
+    sidebarDepth: 2,
     children: [
-      'linux',
-    ]
-  }, ]
+      'linux'
+    ]},
+    {
+      title: groupB,
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        'maths/workshop-list',
+      ]},
+ ]
 }
