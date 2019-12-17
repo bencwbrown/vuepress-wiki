@@ -4,11 +4,7 @@ module.exports = [
     ariaLabel: "Geometry",
     items: [
       {
-        text: "Geometry",
-        link: "/geometry/"
-      },
-      {
-        text: "Algebraic",
+        text: "Algebraic Geometry",
         items: [
           {
             text: "Varieties",
@@ -29,7 +25,7 @@ module.exports = [
         ]
       },
       {
-        text: "Complex",
+        text: "Complex Geometry",
         items: [
           {
             text: "Toric Geometry",
@@ -42,7 +38,7 @@ module.exports = [
         ]
       },
       {
-        text: "Symplectic",
+        text: "Symplectic Geometry",
         items: [
           {
             text: "Moment Maps",
@@ -51,7 +47,7 @@ module.exports = [
         ]
       },
       {
-        text: "Differential",
+        text: "Differential Geometry",
         items: [
           {
             text: "Connections",
@@ -66,10 +62,6 @@ module.exports = [
     ariaLabel: "Topology",
     items: [
       {
-        text: "Topology",
-        link: "/topology/"
-      },
-      {
         text: "Cohomology",
         items: [
           {
@@ -80,16 +72,12 @@ module.exports = [
       }
     ]
   },
-  {
-    text: "Algebra",
-    ariaLabel: "Algebra",
+  {    
+  text: "Algebra",
+  ariaLabel: "Algebra",
     items: [
       {
-        text: "Algebra",
-        link: "/algebra/"
-      },
-      {
-        text: "Algebra",
+        text: "Algebras",
         items: [
           {
             text: "Introduction",
@@ -143,10 +131,6 @@ module.exports = [
     text: "Physics",
     ariaLabel: "Physics",
     items: [
-      {
-        text: "Physics",
-        link: "/physics/"
-      },
       {
         text: "Gauge Theory",
         items: [
