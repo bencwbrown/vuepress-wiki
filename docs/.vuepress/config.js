@@ -70,9 +70,9 @@ module.exports = ctx => ({
         sidebar: {
           '/geometry/': getGeometrySidebar('Algebraic Geometry', 'Complex Geometry', 'Symplectic Geometry', 'Differential Geometry'),
           '/topology/': getTopologySidebar('Cohomology'),
-          '/algebra/': getAlgebraSidebar('Algebras', 'Category Theory', 'Group Theory', 'Representation Theory', 'Rings'),
+          '/algebra/': getAlgebraSidebar('Algebras', 'Category Theory', 'Group Theory', 'Homological Algebra', 'Representation Theory', 'Rings'),
           '/physics/': getPhysicsSidebar('Gauge Theory', 'Quantisation', 'String Theory', 'Supersymmetry'),
-          '/miscellaneous/': getMiscSidebar('Linux', 'Mathematics'),
+          '/misc/': getMiscSidebar('Linux', 'Mathematics'),
         }
       }
     }
@@ -170,7 +170,7 @@ function getTopologySidebar(groupA) {
   }]
 }
 
-function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE) {
+function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE, groupF) {
   return [{
       title: groupA,
       collapsable: false,
@@ -185,7 +185,7 @@ function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        'categories/categories'
+        'categories/cats-funs'
       ]
     },
     {
@@ -202,11 +202,19 @@ function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        'representation/representation',
+        'homological/test',
       ]
     },
     {
       title: groupE,
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        'representation/representation',
+      ]
+    },
+    {
+      title: groupF,
       collapsable: false,
       sidebarDepth: 2,
       children: [

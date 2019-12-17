@@ -89,8 +89,8 @@ module.exports = [
         text: "Category Theory",
         items: [
           {
-            text: "Introduction",
-            link: "/algebra/categories/categories.html"
+            text: "Categories & Functors",
+            link: "/algebra/categories/cats-funs.html"
           }
         ]
       },
@@ -104,6 +104,15 @@ module.exports = [
           {
             text: "Lie Groups",
             link: "/algebra/groups/lie.html"
+          }
+        ]
+      },
+      {
+        text: "Homological Algebra",
+        items: [
+          {
+            text: "test page",
+            link: "/algebra/homological/test.html"
           }
         ]
       },
@@ -175,6 +184,26 @@ module.exports = [
   },
   {
     text: "Miscellaneous",
-    link: "/miscellaneous/"
-  }
+    ariaLabel: "Miscellaneous",
+    items: [
+      {
+        text: "Computing",
+        items: [
+          {
+            text: "Linux",
+            link: "/misc/computing/linux.html"
+          }
+        ]
+      },
+      {
+        text: "Mathematics",
+        items: [
+          {
+            text: "List of Lists",
+            link: "/misc/maths/workshop-list.html"
+          }
+        ]
+      }
+    ]
+  },
 ]
