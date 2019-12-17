@@ -259,7 +259,7 @@ function getMiscSidebar(groupA, groupB) {
     collapsable: false,
     sidebarDepth: 2,
     children: [
-      'linux'
+      'computing/linux'
     ]},
     {
       title: groupB,
