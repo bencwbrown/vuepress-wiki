@@ -94,3 +94,37 @@ $$ \begin{aligned}
 \end{aligned}
 $$
 
+### Functors
+
+::: tip Definition
+A __covariant functor__ $F$ from a category $\mcC$ to a category $\mcD$ (notation: $F: \mcC \rightarrow \mcD$) consists of the following data:
+- A mapping $\Ob \mcC \rightarrow \mcD : X \rightarrow F(X)$;
+- A mapping $\Mor \mcC \rightarrow \mcD: \vp \rightarrow F(\vp)$ such that for $\vp \in \Hom_{\mcC}(X,Y)$ we have that $F(\vp) \in \Hom_{\mcD}(F(X), F(Y))$.
+This data should satisfy the following conditions: $F(\vp \circ \psi) = F(\psi)$ for any $\vp, \psi \in \Mor \mcC$ for which $\vp \circ \psi$ is defined. In particular, $F(\id_{X}) = \id_{F(X)}$.
+:::
+
+::: warning Example
+Consider the mapping $h_{X} : \mcC \rightarrow Set, X \in \Ob \mcC$,
+$$
+    \begin{aligned}
+        h_{X}(Y) &= \Hom_{\mcC}(X,Y), \\
+        h_{X}(f)(\vp) &= f \circ \vp, \text{ where } f : Y \rightarrow Y^{\prime}, \vp \in \Hom_{\mcC}(X,Y).
+    \end{aligned}
+$$
+:::
+
+::: warning Example
+Given any category $\mcC$, we can construct the __opposite category__ of $\mcC$, denoted $\mcC^{op}$. It has the same objects as $\mcC$, but for any two $X, Y \in \Ob\mcC$, $\Mor_{\mcC^{op}}(X,Y) = \Mor_{\mcC}(Y,X)$.
+:::
+
+::: tip Definition
+A __contravariant functor__ from a category $\mcC$ to a category $\mcD$ is a covariant functor from $\mcC$ to $\mcD^{op}$.
+:::
+
+::: spoiler click me
+aadsadas
+:::
+
+::: theorem Testing
+this is a test
+:::

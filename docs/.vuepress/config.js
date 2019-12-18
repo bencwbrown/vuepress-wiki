@@ -90,11 +90,10 @@ module.exports = ctx => ({
       ga: 'UA-120544103-2',
     }],
     ['container', {
-      type: 'vue',
-      before: '<pre class="vue-container"><code>',
-      after: '</code></pre>',
+      type: 'theorem',
+      before: info => `<div class="theorem"><p class="title">${info}</p>`,
+      after: '</div>',
     }],
-
     ['container', {
       type: 'upgrade',
       before: info => `<UpgradePath title="${info}">`,
@@ -116,7 +115,31 @@ module.exports = ctx => ({
 
   extraWatchFiles: [
     '.vuepress/nav/en.js',
-  ]
+  ],
+
+  extendMarkdown: md => {
+    md.set({ breaks: true })
+    md.use(require('markdown-it-container'), 'spoiler', {
+
+      validate: function(params) {
+        return params.trim().match(/^spoiler\s+(.*)$/);
+      },
+    
+      render: function (tokens, idx) {
+        var m = tokens[idx].info.trim().match(/^spoiler\s+(.*)$/);
+    
+        if (tokens[idx].nesting === 1) {
+          // opening tag
+          return '<details><summary>' + md.utils.escapeHtml(m[1]) + '</summary>\n';
+    
+        } else {
+          // closing tag
+          return '</details>\n';
+        }
+      }
+    });
+    
+  }
 })
 
 function getGeometrySidebar(groupA, groupB, groupC, groupD) {
