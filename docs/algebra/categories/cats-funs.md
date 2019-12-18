@@ -121,6 +121,23 @@ Given any category $\mcC$, we can construct the __opposite category__ of $\mcC$,
 A __contravariant functor__ from a category $\mcC$ to a category $\mcD$ is a covariant functor from $\mcC$ to $\mcD^{op}$.
 :::
 
-::: lemma adsad
-aaa
+::: example Examples
+- Any presheaf of abelian groups on a topological space $X$ is a functor
+$$
+    F: Top_{X} \longrightarrow Ab.
+$$
+- Let $I$ be a partially ordered set, $\mcC(I)$ be the corresponding category. A functor $G : \mcC(I) \rightarrow Ab$ is a family of abelian groups $\{ G(i) : i \in I \}$ and of maps $g_{ij} : G_{i} \rightarrow G_{j}$, one for each ordered pair $i \leq j$. These maps should satisfy the conditions $g_{ij} \circ g_{ij} = g_{ik}$ for $i \leq j \leq k$, $g_{ii} = \id_{G_{i}}$. Such families usually appear as raw material for inductive and/or projective limits.
+- By simply forgetting one or more structures on an object, we obtain many functors for the initial category. For example,
+$$
+    Top,\ Diff, \ Ab, \ Gr \longrightarrow Set,
+$$
+are functors that simply forget the topological, differentiable, abelian group, and group structures of the objects in the initial category, respectively. Since these functors "forget" some or all of the structure(s) of the object in the initial category, these are examples of __forgetful functors__.
+:::
+
+::: definition
+Let $F,G$ be two functors from $\mcC$ to $\mcD$. A __morphism of functors__ from $F$ to $G$ (notation: $f:F \rightarrow G$) is a family of morphisms in $\mcD$:
+$$
+    f(X): F(X) \longrightarrow G(X),
+$$
+one for each $X \in \Ob \mcC$, satisfying the following condition: for any morphism $\vp : X \rightarrow Y$ in $\mcC$, the diagram (insert diagram) is commutative.
 :::
