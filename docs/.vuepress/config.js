@@ -70,7 +70,7 @@ module.exports = ctx => ({
         sidebar: {
           '/geometry/': getGeometrySidebar('Algebraic Geometry', 'Complex Geometry', 'Symplectic Geometry', 'Differential Geometry'),
           '/topology/': getTopologySidebar('Cohomology'),
-          '/algebra/': getAlgebraSidebar('Algebras', 'Category Theory', 'Group Theory', 'Homological Algebra', 'Representation Theory', 'Rings'),
+          '/algebra/': getAlgebraSidebar('Algebras', 'Category Theory', 'Group Theory', 'Homological Algebra', 'Representation Theory', 'Rings & Modules'),
           '/physics/': getPhysicsSidebar('Gauge Theory', 'Quantisation', 'String Theory', 'Supersymmetry'),
           '/misc/': getMiscSidebar('Linux', 'Mathematics'),
         }
@@ -269,7 +269,8 @@ function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE, groupF) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        'rings/rings',
+        'rings-modules/rings',
+        'rings-modules/ext'
       ]
     }
   ]

@@ -126,11 +126,11 @@ module.exports = [
         ]
       },
       {
-        text: "Rings",
+        text: "Rings & Modules",
         items: [
           {
             text: "Introduction",
-            link: "/algebra/rings/rings.html"
+            link: "/algebra/rings/rings-modules.html"
           }
         ]
       },
