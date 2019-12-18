@@ -121,14 +121,6 @@ Given any category $\mcC$, we can construct the __opposite category__ of $\mcC$,
 A __contravariant functor__ from a category $\mcC$ to a category $\mcD$ is a covariant functor from $\mcC$ to $\mcD^{op}$.
 :::
 
-::: spoiler click me
-aadsadas
-:::
-
-::: example
-this is a test
-:::
-
-::: theorem 
-test theorem
+::: lemma adsad
+aaa
 :::
