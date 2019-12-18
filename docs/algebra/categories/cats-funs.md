@@ -4,7 +4,7 @@
 
 ### Definitions
 
-::: tip Definition
+::: definition Definitions
 A __category__ $\mcC$ consists of the following data:
 - A set of $\Ob \mcC$ wholse elements are called __objects__ of $\mcC$;
 - A collection of sets $\Hom(X,Y)$, one for each ordered pair of objects $X, Y \in \Ob \mcC$, whose elements are called __morphisms__ (from $X$ to $Y$); they are denoted $\vp: X \rightarrow Y$;
@@ -32,7 +32,7 @@ Sometimes it is abbreviated $X \in \mcC$ rather thatn $X \in \Ob \mcC$, and $\Ho
 
 An important class of categories is formed by categories whose objects are sets with some additional structure, and whose morphisms are maps respecting this structure.
 
-::: warning Examples
+::: example Examples
 - $Top$, the category of topological spaces with continuous maps between them;
 - $Diff$, the category of smooth manifolds and smooth maps;
 - $Ab$, the category of abelian groups and homomorphisms;
@@ -96,14 +96,14 @@ $$
 
 ### Functors
 
-::: tip Definition
+::: definition
 A __covariant functor__ $F$ from a category $\mcC$ to a category $\mcD$ (notation: $F: \mcC \rightarrow \mcD$) consists of the following data:
 - A mapping $\Ob \mcC \rightarrow \mcD : X \rightarrow F(X)$;
 - A mapping $\Mor \mcC \rightarrow \mcD: \vp \rightarrow F(\vp)$ such that for $\vp \in \Hom_{\mcC}(X,Y)$ we have that $F(\vp) \in \Hom_{\mcD}(F(X), F(Y))$.
 This data should satisfy the following conditions: $F(\vp \circ \psi) = F(\psi)$ for any $\vp, \psi \in \Mor \mcC$ for which $\vp \circ \psi$ is defined. In particular, $F(\id_{X}) = \id_{F(X)}$.
 :::
 
-::: warning Example
+::: example
 Consider the mapping $h_{X} : \mcC \rightarrow Set, X \in \Ob \mcC$,
 $$
     \begin{aligned}
@@ -113,11 +113,11 @@ $$
 $$
 :::
 
-::: warning Example
+::: example
 Given any category $\mcC$, we can construct the __opposite category__ of $\mcC$, denoted $\mcC^{op}$. It has the same objects as $\mcC$, but for any two $X, Y \in \Ob\mcC$, $\Mor_{\mcC^{op}}(X,Y) = \Mor_{\mcC}(Y,X)$.
 :::
 
-::: tip Definition
+::: definition
 A __contravariant functor__ from a category $\mcC$ to a category $\mcD$ is a covariant functor from $\mcC$ to $\mcD^{op}$.
 :::
 
@@ -125,6 +125,10 @@ A __contravariant functor__ from a category $\mcC$ to a category $\mcD$ is a cov
 aadsadas
 :::
 
-::: theorem Testing
+::: example
 this is a test
+:::
+
+::: theorem 
+test theorem
 :::

@@ -1,0 +1,39 @@
+.custom-block-theorem
+  .custom-block-theorem-title
+    font-weight 600
+    margin-bottom -0.4rem
+  &.definition, &.example, &.lemma, &.proposition, &.theorem
+    padding .1rem 1.5rem
+    border-left-width .5rem
+    border-left-style solid
+    margin 1rem 0
+  &.definition
+    background-color #f3f5f7
+    border-color #42b983
+  &.example
+    background-color #f3f5f7
+    border-color #d717eb
+  &.lemma
+    background-color #3189ec
+    border-color darken(blue, 20%)
+    color darken(blue, 70%)
+    .custom-block-title
+      color darken(blue, 40%)
+    a
+      color $textColor
+  &.proposition
+    background-color #ff0000
+    border-color darken(red, 20%)
+    color darken(red, 70%)
+    .custom-block-title
+      color darken(red, 40%)
+    a
+      color $textColor
+  &.theorem
+    background-color #fbff00
+    border-color darken(yellow, 20%)
+    color darken(yellow, 70%)
+    .custom-block-title
+      color darken(yellow, 40%)
+    a
+      color $textColor
