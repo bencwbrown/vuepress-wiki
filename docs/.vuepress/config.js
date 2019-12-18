@@ -89,15 +89,35 @@ module.exports = ctx => ({
     ['@vuepress/google-analytics', {
       ga: 'UA-120544103-2',
     }],
-    ['container', {
-      type: 'theorem',
-      before: info => `<div class="theorem"><p class="title">${info}</p>`,
+    ['vuepress-plugin-container', {
+      type: 'definition',
+      defaultTitle: 'Definition',
+      before: info => `<div class="definition"><p class="title">${info}</p>`,
       after: '</div>',
     }],
-    ['container', {
-      type: 'upgrade',
-      before: info => `<UpgradePath title="${info}">`,
-      after: '</UpgradePath>',
+    ['vuepress-plugin-container', {
+      type: 'example',
+      defaultTitle: 'Example',
+      before: info => `<div class="example"><p class="title">${info}</p>`,
+      after: '</div>',
+    }],
+    ['vuepress-plugin-container', {
+      type: 'lemma',
+      defaultTitle: 'Lemma',
+      before: info => `<div class="lemma"><p class="title">${info}</p>`,
+      after: '</div>',
+    }],
+    ['vuepress-plugin-container', {
+      type: 'proposition',
+      defaultTitle: 'Proposition',
+      before: info => `<div class="proposition"><p class="title">${info}</p>`,
+      after: '</div>',
+    }],
+    ['vuepress-plugin-container', {
+      type: 'theorem',
+      defaultTitle: 'Theorem',
+      before: info => `<div class="theorem"><p class="title">${info}</p>`,
+      after: '</div>',
     }],
 
 //    ['@vuepress/last-updated', {

@@ -22,12 +22,76 @@ pre.vue-container
       color #808080
       font-weight light
 
+.definition
+    font-weight 400
+    margin-bottom -0.4rem
+    padding .1rem 1.5rem
+    border-left-width .5rem
+    border-left-style solid
+    margin 1rem 0
+    background-color #f3f5f7
+    border-color #42b983
+    .title
+      font-weight: 600
+
+.example
+    font-weight 400
+    margin-bottom -0.4rem
+    padding .1rem 1.5rem
+    border-left-width .5rem
+    border-left-style solid
+    margin 1rem 0
+    background-color #f3f5f7
+    border-color #d717eb
+    .title
+      font-weight: 600
+
+.lemma
+    font-weight 600
+    margin-bottom -0.4rem
+    padding .1rem 1.5rem
+    border-left-width .5rem
+    border-left-style solid
+    margin 1rem 0
+    background-color #3189ec
+    border-color darken(blue, 20%)
+    color darken(blue, 70%)
+    .title
+      font-weight: 600
+      color darken(blue, 40%)
+    a
+      color $textColor
+
+.proposition
+    font-weight 600
+    margin-bottom -0.4rem
+    padding .1rem 1.5rem
+    border-left-width .5rem
+    border-left-style solid
+    margin 1rem 0
+    background-color #ff0000
+    border-color darken(red, 20%)
+    color darken(red, 70%)
+    .title
+      font-weight: 600
+      color darken(red, 40%)
+    a
+      color $textColor
+
 .theorem
-  margin 1rem 0
-  padding .1rem 1.5rem
-  border-radius 0.4rem
-  background-color #f0f4f8
-  .title
-    font-weight bold
+    font-weight 400
+    margin-bottom -0.4rem
+    padding .1rem 1.5rem
+    border-left-width .5rem
+    border-left-style solid
+    margin 1rem 0
+    background-color #ffe6e6
+    border-color darken(red, 20%)
+    color darken(red, 70%)
+    .title
+      font-weight: 600
+      color darken(red, 40%)
+    a
+      color $textColor
 
 @require '~vuepress-plugin-tabs/dist/themes/default.styl'
