@@ -94,7 +94,7 @@ $$ \begin{aligned}
 \end{aligned}
 $$
 
-### Functors
+## Functors
 
 ::: definition
 A __covariant functor__ $F$ from a category $\mcC$ to a category $\mcD$ (notation: $F: \mcC \rightarrow \mcD$) consists of the following data:
@@ -141,3 +141,34 @@ $$
 $$
 one for each $X \in \Ob \mcC$, satisfying the following condition: for any morphism $\vp : X \rightarrow Y$ in $\mcC$, the diagram (insert diagram) is commutative.
 :::
+
+The composition of morphisms of functors, as well as the identity morphism of functors, are defined in the obvious way. Thus, functors from $\mcC$ to $\mcD$ form a category in their own right, which is usually denoted $Funct(\mcC,\mcD)$.
+
+## Subcategories
+
+::: definition
+A category $\mcC$ is said to be a __subcategory__ of a category $\mcD$ if
+- $\Ob \mcC \subset \Ob \mcD$;
+- $\Hom_{\mcC}(X,Y) \subset \Hom_{\mcD}(X,Y)$ for any $X,Y \in \Ob \mcC$;
+- The composition of morphisms in $\mcC$ coincide with their composition in $\mcD$, for $X \in \Ob \mcC$ the identity morphism $\id_{X}$ in $\mcC$ coincides with the identity morphism $\id_{X}$ in $\mcD$.
+:::
+
+::: definition Definitions
+A subcategory $\mcC$ is said to be __full__ if $\Hom_{\mcC}(X,Y)$ = $\Hom_{\mcD}(X,Y)$ for any $X,Y \in \Ob \mcC$.
+
+A functor $f : \mcC \rightarrow \mcD$ is said to be __faithful__ if for any $X,Y \in \Ob \mcC$ the map
+$$
+    F : \Hom_{\mcC}(X,Y) \longrightarrow \Hom_{\mcD}(FX,FY)
+$$
+is injective, and __full__ if this map is surjective.
+
+An object $\alpha$ of a category $\mcC$ is said to be an __initial object__ if $\Hom_{\mcC}(\alpha, X)$ is a one-element set of any $X \in \Ob \mcC$. Similarly, an object $\w$ is said to be a __final object__ in $\mcC$ if $\Hom_{\mcC}(X,\w)$ is a one-element set for any $X \in \Ob \mcC$. 
+:::
+
+Both initial and final objects are determined uniquely up to isomorphism, if they exist.
+
+## To Do
+
+- Isomorphisms of categories
+- Equivalence of categories
+- Quasi-inverses of functors

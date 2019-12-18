@@ -119,6 +119,12 @@ module.exports = ctx => ({
       before: info => `<div class="theorem"><p class="title">${info}</p>`,
       after: '</div>',
     }],
+    ['vuepress-plugin-container', {
+      type: 'remark',
+      defaultTitle: 'Remark',
+      before: info => `<div class="remark"><p class="title">${info}</p>`,
+      after: '</div>',
+    }],
 
 //    ['@vuepress/last-updated', {
 //      transformer: timestamp => timestamp || new Date(),
@@ -228,7 +234,9 @@ function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE, groupF) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        'categories/cats-funs'
+        'categories/cats-funs.md',
+        'categories/structures.md',
+        'categories/add-ab.md'
       ]
     },
     {
