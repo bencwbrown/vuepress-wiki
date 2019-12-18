@@ -69,7 +69,7 @@ module.exports = ctx => ({
         nav: require('./en'),
         sidebar: {
           '/geometry/': getGeometrySidebar('Algebraic Geometry', 'Complex Geometry', 'Symplectic Geometry', 'Differential Geometry'),
-          '/topology/': getTopologySidebar('Cohomology'),
+          '/topology/': getTopologySidebar('Algebraic Topology', 'Cohomology'),
           '/algebra/': getAlgebraSidebar('Algebras', 'Category Theory', 'Group Theory', 'Homological Algebra', 'Representation Theory', 'Rings & Modules'),
           '/physics/': getPhysicsSidebar('Gauge Theory', 'Quantisation', 'String Theory', 'Supersymmetry'),
           '/misc/': getMiscSidebar('Linux', 'Mathematics'),
@@ -185,6 +185,7 @@ function getGeometrySidebar(groupA, groupB, groupC, groupD) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
+        './complex/higgs-bundles',
         './complex/toric',
         './complex/vector-bundles',
       ]
@@ -208,9 +209,17 @@ function getGeometrySidebar(groupA, groupB, groupC, groupD) {
   ]
 }
 
-function getTopologySidebar(groupA) {
+function getTopologySidebar(groupA, groupB) {
   return [{
-    title: groupA,
+      title: groupA,
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        './algebraic/k-theory'
+      ]
+    },
+    {
+    title: groupB,
     collapsable: false,
     sidebarDepth: 2,
     children: [
@@ -270,7 +279,7 @@ function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE, groupF) {
       sidebarDepth: 2,
       children: [
         'rings-modules/rings',
-        'rings-modules/ext'
+        'rings-modules/ext-tor'
       ]
     }
   ]

@@ -28,6 +28,10 @@ module.exports = [
         text: "Complex Geometry",
         items: [
           {
+            text: "Higgs Bundles",
+            link: "/geometry/complex/higgs-bundles.html"
+          },
+          {
             text: "Toric Geometry",
             link: "/geometry/complex/toric.html"
           },
@@ -61,6 +65,15 @@ module.exports = [
     text: "Topology",
     ariaLabel: "Topology",
     items: [
+      {
+        text: "Algebraic Topology",
+        items: [
+          {
+            text: "K-Theory",
+            link: "/topology/algebraic/k-theory.html"
+          }
+        ]
+      },
       {
         text: "Cohomology",
         items: [
@@ -130,7 +143,11 @@ module.exports = [
         items: [
           {
             text: "Introduction",
-            link: "/algebra/rings/rings-modules.html"
+            link: "/algebra/rings-modules/rings.html"
+          },
+          {
+            text: "Ext & Tor",
+            link: "/algebra/rings-modules/ext-tor.html"
           }
         ]
       },
