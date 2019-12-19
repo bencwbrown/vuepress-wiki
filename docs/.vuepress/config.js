@@ -336,13 +336,14 @@ function getMiscSidebar(groupA, groupB) {
       sidebarDepth: 2,
       children: [
         'maths/workshop-list',
-      ]},
-      {
+    ]},
+    {
         title: groupC,
         collapsable: false,
         sidebarDepth: 2,
         children: [
           'other/media-bias',
-        ]},
+          'other/lists',
+    ]},
  ]
 }

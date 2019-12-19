@@ -227,6 +227,10 @@ module.exports = [
           {
             text: "Media Bias",
             link: "/misc/other/media-bias.html"
+          },
+          {
+            text: "Lists",
+            link: "/misc/other/lists.html"
           }
         ]
       }
