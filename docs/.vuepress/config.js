@@ -72,7 +72,7 @@ module.exports = ctx => ({
           '/topology/': getTopologySidebar('Algebraic Topology', 'Cohomology'),
           '/algebra/': getAlgebraSidebar('Algebras', 'Category Theory', 'Group Theory', 'Homological Algebra', 'Representation Theory', 'Rings & Modules'),
           '/physics/': getPhysicsSidebar('Gauge Theory', 'Quantisation', 'String Theory', 'Supersymmetry'),
-          '/misc/': getMiscSidebar('Linux', 'Mathematics'),
+          '/misc/': getMiscSidebar('Linux', 'Mathematics', 'Other'),
         }
       }
     }
@@ -337,5 +337,12 @@ function getMiscSidebar(groupA, groupB) {
       children: [
         'maths/workshop-list',
       ]},
+      {
+        title: groupC,
+        collapsable: false,
+        sidebarDepth: 2,
+        children: [
+          'other/media-bias',
+        ]},
  ]
 }

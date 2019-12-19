@@ -220,6 +220,15 @@ module.exports = [
             link: "/misc/maths/workshop-list.html"
           }
         ]
+      },
+      {
+        text: "Other",
+        items: [
+          {
+            text: "Media Bias",
+            link: "/misc/other/media-bias.html"
+          }
+        ]
       }
     ]
   },
