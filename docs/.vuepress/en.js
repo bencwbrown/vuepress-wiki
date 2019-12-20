@@ -146,6 +146,10 @@ module.exports = [
             link: "/algebra/rings-modules/rings.html"
           },
           {
+            text: "Constructions of Rings",
+            link: "/algebra/rings-modules/ring-constructions.html"
+          },
+          {
             text: "Ext & Tor",
             link: "/algebra/rings-modules/ext-tor.html"
           }

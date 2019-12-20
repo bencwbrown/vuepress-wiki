@@ -278,6 +278,7 @@ function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE, groupF) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
+        'rings-modules/ring-constructions',
         'rings-modules/rings',
         'rings-modules/ext-tor'
       ]
@@ -322,7 +323,7 @@ function getPhysicsSidebar(groupA, groupB, groupC, groupD) {
   ]
 }
 
-function getMiscSidebar(groupA, groupB) {
+function getMiscSidebar(groupA, groupB, groupC) {
   return [{
     title: groupA,
     collapsable: false,
