@@ -90,15 +90,6 @@ module.exports = [
   ariaLabel: "Algebra",
     items: [
       {
-        text: "Algebras",
-        items: [
-          {
-            text: "Introduction",
-            link: "/algebra/algebras/algebras.html"
-          }
-        ]
-      },
-      {
         text: "Category Theory",
         items: [
           {
@@ -139,19 +130,19 @@ module.exports = [
         ]
       },
       {
-        text: "Rings & Modules",
+        text: "Rings, Modules & Algebras",
         items: [
           {
-            text: "Introduction",
-            link: "/algebra/rings-modules/rings.html"
+            text: "Fundamentals",
+            link: "/algebra/rings-mod-alg/fundamentals.html"
           },
           {
             text: "Constructions of Rings",
-            link: "/algebra/rings-modules/ring-constructions.html"
+            link: "/algebra/rings-mod-alg/modules-structure.html"
           },
           {
             text: "Ext & Tor",
-            link: "/algebra/rings-modules/ext-tor.html"
+            link: "/algebra/rings-mod-alg/ext-tor.html"
           }
         ]
       },
@@ -196,8 +187,12 @@ module.exports = [
         text: "Supersymmetry",
         items: [
           {
-            text: "Introduction",
-            link: "/physics/supersymmetry/intro.html"
+            text: "Superalgebras",
+            link: "/physics/supersymmetry/superalgebras.html"
+          },
+          {
+            text: "G* Modules",
+            link: "/physics/supersymmetry/g-star-modules.html"
           }
         ]
       },

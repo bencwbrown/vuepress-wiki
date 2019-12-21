@@ -1,4 +1,4 @@
-# Constructions of Rings
+# Constructions of Rings and Modules
 
 ## Free Modules and Rings
 
@@ -21,3 +21,4 @@ where almost all of the $r_{s}\in R$ are zero and are uniquely determined. A mod
 - The ring of triangular matrices over $R$ is free in $R\catMod$, with base $\{ e_{ij} : 1 \leq i \leq j \leq n \}$ (which has $n(n+1)/2$ elements).
 - $R[\lambda]$ is a free $R$-module, with base $\{ \lambda^{i} : i \in \NN \}$.
 :::
+

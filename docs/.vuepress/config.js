@@ -70,7 +70,7 @@ module.exports = ctx => ({
         sidebar: {
           '/geometry/': getGeometrySidebar('Algebraic Geometry', 'Complex Geometry', 'Symplectic Geometry', 'Differential Geometry'),
           '/topology/': getTopologySidebar('Algebraic Topology', 'Cohomology'),
-          '/algebra/': getAlgebraSidebar('Algebras', 'Category Theory', 'Group Theory', 'Homological Algebra', 'Representation Theory', 'Rings & Modules'),
+          '/algebra/': getAlgebraSidebar('Category Theory', 'Group Theory', 'Homological Algebra', 'Representation Theory', 'Rings, Modules & Algebras'),
           '/physics/': getPhysicsSidebar('Gauge Theory', 'Quantisation', 'String Theory', 'Supersymmetry'),
           '/misc/': getMiscSidebar('Linux', 'Mathematics', 'Other'),
         }
@@ -228,18 +228,9 @@ function getTopologySidebar(groupA, groupB) {
   }]
 }
 
-function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE, groupF) {
+function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE) {
   return [{
       title: groupA,
-      collapsable: false,
-      sidebarDepth: 2,
-      children: [
-        'algebras/algebras',
-        'algebras/weil'
-      ]
-    },
-    {
-      title: groupB,
       collapsable: false,
       sidebarDepth: 2,
       children: [
@@ -249,7 +240,7 @@ function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE, groupF) {
       ]
     },
     {
-      title: groupC,
+      title: groupB,
       collapsable: false,
       sidebarDepth: 2,
       children: [
@@ -258,7 +249,7 @@ function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE, groupF) {
       ]
     },
     {
-      title: groupD,
+      title: groupC,
       collapsable: false,
       sidebarDepth: 2,
       children: [
@@ -266,7 +257,7 @@ function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE, groupF) {
       ]
     },
     {
-      title: groupE,
+      title: groupD,
       collapsable: false,
       sidebarDepth: 2,
       children: [
@@ -274,13 +265,13 @@ function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE, groupF) {
       ]
     },
     {
-      title: groupF,
+      title: groupE,
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        'rings-modules/ring-constructions',
-        'rings-modules/rings',
-        'rings-modules/ext-tor'
+        'rings-mod-alg/fundamentals',
+        'rings-mod-alg/modules-structure',
+        'rings-mod-alg/ext-tor'
       ]
     }
   ]
@@ -317,7 +308,8 @@ function getPhysicsSidebar(groupA, groupB, groupC, groupD) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        'supersymmetry/intro'
+        'supersymmetry/superalgebras',
+        'supersymmetry/g-star-modules'
       ]
     },
   ]

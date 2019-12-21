@@ -6,7 +6,7 @@
     "precommit": "lint-staged",
     "dev": "vuepress dev docs --temp .temp",
     "build": "vuepress build docs --temp .temp",
-    "katex-update": "npm link ../vuepress-plugin-latex && npm install",
+    "katex-update": "npm uninstall vuepress-plugin-latex && npm install bencwbrown/vuepress-plugin-latex",
     "view-info": "vuepress view-info docs --temp .temp",
     "show-help": "vuepress --help",
     "lint-md:wording": "textlint ./docs/**/*.md",
