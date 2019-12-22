@@ -130,3 +130,22 @@ $$
 $$
 constitute a basis of $\wedge(V\oplus W)$. This shows that in our category of superalgebras, we have that $\wedge(V \oplus W) = \wedge(V) \otimes \wedge(W)$. If $M$ and $N$ are smooth manifolds, then $\W(M) \otimes \W(N)$ is a subalgebra of $\W(M \times N)$, which is dense in the $C^{\infty}$ toplogy.
 :::
+
+::: remark
+The above definition of the tensor product of two superalgebras and the respective multiplication has the following universal property: let
+$$
+    u:  A \ra C,\qquad v : B \ra C,
+$$
+be two morphisms of superalgebras such that
+$$
+    [u(a), v(b)] = 0,\qquad \text{for all } a \in A, b \in B.
+$$
+Then there exists a unique superalgebra morphism
+$$
+    w : A \otimes B \ra C
+$$
+such that
+$$
+    w(a \otimes 1) = u(a),\qquad w(1 \otimse b) = v(b).
+$$
+:::
