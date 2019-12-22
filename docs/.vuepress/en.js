@@ -112,11 +112,15 @@ module.exports = [
         ]
       },
       {
-        text: "Homological Algebra",
+        text: "Homology & Cohomology Theory",
         items: [
           {
-            text: "test page",
-            link: "/algebra/homological/test.html"
+            text: "Characteristic Classes",
+            link: "/algebra/co-homological/characteristic-classes.html"
+          },
+          {
+            text: "G* Modules",
+            link: "/algebra/co-homological/g-star-modules.html"
           }
         ]
       },
@@ -189,10 +193,6 @@ module.exports = [
           {
             text: "Superalgebras",
             link: "/physics/supersymmetry/superalgebras.html"
-          },
-          {
-            text: "G* Modules",
-            link: "/physics/supersymmetry/g-star-modules.html"
           }
         ]
       },

@@ -70,7 +70,7 @@ module.exports = ctx => ({
         sidebar: {
           '/geometry/': getGeometrySidebar('Algebraic Geometry', 'Complex Geometry', 'Symplectic Geometry', 'Differential Geometry'),
           '/topology/': getTopologySidebar('Algebraic Topology', 'Cohomology'),
-          '/algebra/': getAlgebraSidebar('Category Theory', 'Group Theory', 'Homological Algebra', 'Representation Theory', 'Rings, Modules & Algebras'),
+          '/algebra/': getAlgebraSidebar('Category Theory', 'Group Theory', 'Homology & Cohomology Theory', 'Representation Theory', 'Rings, Modules & Algebras'),
           '/physics/': getPhysicsSidebar('Gauge Theory', 'Quantisation', 'String Theory', 'Supersymmetry'),
           '/misc/': getMiscSidebar('Linux', 'Mathematics', 'Other'),
         }
@@ -253,7 +253,8 @@ function getAlgebraSidebar(groupA, groupB, groupC, groupD, groupE) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        'homological/test',
+        'co-homological/characteristic-classes',
+        'co-homological/g-star-modules'
       ]
     },
     {
@@ -308,8 +309,7 @@ function getPhysicsSidebar(groupA, groupB, groupC, groupD) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        'supersymmetry/superalgebras',
-        'supersymmetry/g-star-modules'
+        'supersymmetry/superalgebras'
       ]
     },
   ]
