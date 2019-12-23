@@ -115,3 +115,6 @@ The characteristic class corresponding to the Pfaffian for a real, $2n$-dimensio
 $$
     e(E) \in H^{2n}(X).
 $$
+
+## Relations Between the Invariants
+

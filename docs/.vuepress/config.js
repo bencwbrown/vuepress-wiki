@@ -195,7 +195,8 @@ function getGeometrySidebar(groupA, groupB, groupC, groupD) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        './symplectic/moment-maps',
+        './symplectic/equivariant-theory',
+        './symplectic/moment-maps'
       ]
     },
     {
@@ -215,7 +216,8 @@ function getTopologySidebar(groupA, groupB) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        './algebraic/k-theory'
+        './algebraic/k-theory',
+        './algebraic/spectral-sequences'
       ]
     },
     {
@@ -335,7 +337,6 @@ function getMiscSidebar(groupA, groupB, groupC) {
         collapsable: false,
         sidebarDepth: 2,
         children: [
-          'other/media-bias',
           'other/lists',
     ]},
  ]

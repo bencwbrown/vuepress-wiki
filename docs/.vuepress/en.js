@@ -45,6 +45,10 @@ module.exports = [
         text: "Symplectic Geometry",
         items: [
           {
+            text: "Equivariant Theory",
+            link: "/geometry/symplectic/equivariant-theory.html"
+          },
+          {
             text: "Moment Maps",
             link: "/geometry/symplectic/moment-maps.html"
           }
@@ -71,6 +75,10 @@ module.exports = [
           {
             text: "K-Theory",
             link: "/topology/algebraic/k-theory.html"
+          },
+          {
+            text: "Spectral Sequences",
+            link: "/topology/algebraic/spectral-sequences.html"
           }
         ]
       },
@@ -223,10 +231,6 @@ module.exports = [
       {
         text: "Other",
         items: [
-          {
-            text: "Media Bias",
-            link: "/misc/other/media-bias.html"
-          },
           {
             text: "Lists",
             link: "/misc/other/lists.html"
