@@ -18,8 +18,7 @@ called a __free resolution__ of $C$. The complex $\Hom(F_{n},A)$ then has cohomo
 
 ::: definition
 Let $A$ and $C$ be modules over a fixed ring $R$. An __extension__ of $A$ by $C$ is a short exact sequence $E : A \into B \onto C$ of $R$-modules and $R$-module homomorphisms. A __morphism__ $\Gamma : E \ra E^{\prime}$ of extensions is a triple $\Gamma = (\alpha, \beta, \gamma)$ of module homomorphisms such that the diagram
-![diagram](../algebras/assets/extensions-morphism.png)
-is commutative.
+(insert diagram) is commutative.
 
 In particular, when $A^{\prime} = A$ and $C^{\prime} = C$, then two extensions $E$ and $E^{\prime}$ of $A$ by $C$ are __congruent__ (notation: $E \equiv E^{\prime}$) if there is a morphism $(\id_{A}, \beta, \id_{C}): E \ra E^{\prime}$.
 :::
