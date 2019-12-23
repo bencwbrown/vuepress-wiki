@@ -20,7 +20,7 @@ In all three cases, $\U(n), \O(n)$, and $\SO(n)$ we must examine the ring $S(\mf
 
 ### $G = \U(n)$
 
-We can identify the Lie algebra of $\U(n)$ with the space of all matrices of the form $iA$, where $A$ is self-adjoint, and hence (using the trace pairing and forgetting the unneeded $i$) may identify $\mfg^{\ast}$ with the space of self-adjoint matrices with the coadjoint action being conjusation:
+We can identify the Lie algebra of $\U(n)$ with the space of all matrices of the form $iA$, where $A$ is self-adjoint, and hence (using the trace pairing and forgetting the unneeded $i$) may identify $\mfg^{\ast}$ with the space of self-adjoint matrices with the coadjoint action being conjugation:
 $$
     U : A \mapsto UAU^{-1},\qquad U \in \U(n).
 $$
@@ -63,4 +63,55 @@ $$
 is an element of $\wedge^{2n}(V^{\ast})$ and the map $A \mapsto \tfrac{1}{n!}\w_{A}^{n}$ depends only on the scalar product and so it $\O(2n)$ invariant. However the group $\SO(2n)$ preserves a basis element, $\vol$, of $\wedge^{2n}(V^{\ast})$, where
 $$
     \vol := e_{1}^{\ast} \wedge e_{2}^{\ast} \wedge \ldots \wedge e_{2n}^{\ast}.
+$$
+Here $e_{1},\ldots, e_{2n}$ is any oriented orthonormgal basis and $e_{1}^{\ast}, \ldots, e_{2n}^{\ast}$ is the dual basis. We may then define $\Pfaff(A)$ by
+$$
+    \frac{1}{n!}\w_{A}^{n} =: \Pfaff(A)\cdot \vol.
+$$
+It is a polynomial function of $A$ of degree $n$ which is $\SO(2n)$ invariant. For any $A$ we can find an oriented orthonormal basis relative to which the matrix $A$ takes the form
+$$
+    \begin{bmatrix}
+        \begin{pmatrix}
+            0 & \lambda_{1} \\
+            -\lambda_{1} & 0
+        \end{pmatrix}
+        & 0 & \ldots & 0 \\
+        0 & \begin{pmatrix}
+            0 & \lambda_{2} \\
+            -\lambda_{2} & 0
+        \end{pmatrix}
+        & \ldots & 0 \\
+        \vdots & \vdots & \ddots & \vdots \\
+        0 & 0 & \ldots &
+         \begin{pmatrix}
+            0 & \lambda_{n} \\
+            -\lambda_{n} & 0
+        \end{pmatrix}
+    \end{bmatrix}.
+$$
+Relative to this orthonormal basis we have 
+$$
+    \w_{A} = \lambda_{1} e_{1}^{\ast} \wedge e_{2}^{\ast} + \ldots + \lambda e_{2n-1}^{\ast} \wedge e_{2n}^{\ast}
+$$
+so
+$$
+    \frac{1}{n!}\w_{A}^{n} = \lambda_{1} \cdot \ldots \cdot \lambda_{n}\cdot \vol
+$$
+and hence 
+$$
+    \Pfaff(A) = \lambda_{1} \cdot \ldots \cdot \lambda_{n}.
+$$
+On the other hand,
+$$
+    \det(A) = \lambda_{1}^{2} \cdot \ldots \cdot \lambda_{n}^{2},
+$$
+so we have the general formula
+$$
+    \Pfaff^{2} = \det.
+$$
+So the square of $(2\pi)^{-n}\Pfaff$ is equal to $p_{n}$. Also note that in odd dimensions, the determinant of any antisymmetric matrix vanishes, so this phenomenon does not occur.
+
+The characteristic class corresponding to the Pfaffian for a real, $2n$-dimensional, oriented vector bundle $E$ is called the __Euler class__ of the vector bundle, and is denoted by
+$$
+    e(E) \in H^{2n}(X).
 $$
